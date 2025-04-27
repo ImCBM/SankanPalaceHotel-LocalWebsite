@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - <span id="hotelNameTitle"></span></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <script src="../public/js/config.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <h1>✧ <span id="hotelName"></span> ✧</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="company_profile.html">Company Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="reservation.html">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="page-header">
+            <div class="container">
+                <h2>Make a Reservation</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Reservation</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container py-5">
+            <h1 class="text-center mb-5">Book Your Stay at <span id="hotelNameBook"></span></h1>
+            <!-- Room Rates Section -->
+            <section class="room-rates-section py-5">
+                <div class="container">
+                    <h2 class="section-title text-center mb-5">Room Rates & Information</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="table-responsive">
+                                <table class="table table-bordered rate-table">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Room Capacity</th>
+                                            <th>Room Type</th>
+                                            <th>Rate/day</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="3">Single</td>
+                                            <td>Regular</td>
+                                            <td>$100.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>De Luxe</td>
+                                            <td>$300.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suite</td>
+                                            <td>$500.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">Double</td>
+                                            <td>Regular</td>
+                                            <td>$200.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>De Luxe</td>
+                                            <td>$500.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suite</td>
+                                            <td>$800.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">Family</td>
+                                            <td>Regular</td>
+                                            <td>$500.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>De Luxe</td>
+                                            <td>$750.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suite</td>
+                                            <td>$1,000.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered rate-table">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th>Type of Payment</th>
+                                                    <th>Additional Charge</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Cash</td>
+                                                    <td>No add'l charge</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Check</td>
+                                                    <td>+ 5%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Credit Card</td>
+                                                    <td>+ 10%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered rate-table">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th colspan="2">For Cash</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>10% discount</td>
+                                                    <td>3-5 days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15% discount</td>
+                                                    <td>6 days above</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reservation Form Section -->
+            <section class="reservation-form-section py-5 bg-light">
+                <div class="container">
+                    <h2 class="section-title text-center mb-5">Online Reservation</h2>
+                    <form action="controllers/reservation_controller.php" method="post" class="reservation-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="customer_name" class="form-label">Customer Name*</label>
+                                    <input type="text" class="form-control" id="customer_name" name="customer_name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="contact_number" class="form-label">Contact Number*</label>
+                                    <input type="text" class="form-control" id="contact_number" name="contact_number" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="date_reserved" class="form-label">Date Reserved*</label>
+                                    <input type="date" class="form-control" id="date_reserved" name="date_reserved" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="date_from" class="form-label">Check-in Date*</label>
+                                    <input type="date" class="form-control" id="date_from" name="date_from" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="date_to" class="form-label">Check-out Date*</label>
+                                    <input type="date" class="form-control" id="date_to" name="date_to" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="form-group">
+                                    <label for="room_capacity" class="form-label">Room Capacity*</label>
+                                    <select class="form-select" id="room_capacity" name="room_capacity" required>
+                                        <option value="">Select Room Capacity</option>
+                                        <option value="Single">Single</option>
+                                        <option value="Double">Double</option>
+                                        <option value="Family">Family</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="form-group">
+                                    <label for="room_type" class="form-label">Room Type*</label>
+                                    <select class="form-select" id="room_type" name="room_type" required>
+                                        <option value="">Select Room Type</option>
+                                        <option value="Regular">Regular</option>
+                                        <option value="De Luxe">De Luxe</option>
+                                        <option value="Suite">Suite</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="form-group">
+                                    <label for="payment_type" class="form-label">Payment Type*</label>
+                                    <select class="form-select" id="payment_type" name="payment_type" required>
+                                        <option value="">Select Payment Type</option>
+                                        <option value="Cash">Cash</option>
+                                        <option value="Check">Check</option>
+                                        <option value="Credit Card">Credit Card</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-4">
+                                <div class="form-group">
+                                    <label for="special_requests" class="form-label">Special Requests</label>
+                                    <textarea class="form-control" id="special_requests" name="special_requests" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit Reservation</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Reservation Policy Section -->
+            <section class="reservation-policy-section py-5">
+                <div class="container">
+                    <h2 class="section-title text-center mb-5">Reservation Policy</h2>
+                    <div class="policy-card">
+                        <div class="row">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <h3><i class="fas fa-info-circle"></i> Important Information</h3>
+                                <ul class="policy-list">
+                                    <li>Reservations must be made at least 24 hours in advance.</li>
+                                    <li>A valid credit card is required to guarantee your reservation.</li>
+                                    <li>Check-in time is 2:00 PM and check-out time is 12:00 PM.</li>
+                                    <li>Early check-in and late check-out may be available upon request, subject to availability.</li>
+                                    <li>Pets are not allowed, except for service animals.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3><i class="fas fa-ban"></i> Cancellation Policy</h3>
+                                <ul class="policy-list">
+                                    <li>Cancellations made 48 hours or more before check-in date will receive a full refund.</li>
+                                    <li>Cancellations made less than 48 hours before check-in will incur a charge equivalent to one night's stay.</li>
+                                    <li>No-shows will be charged the full reservation amount.</li>
+                                    <li>Changes to reservation dates are subject to availability and may incur additional charges.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>✧ <span id="hotelNameFooter"></span> ✧</h4>
+                    <p id="hotelTaglineFooter"></p>
+                    <div class="social-links">
+                        <a href="#" id="discordLink"><i class="fab fa-discord"></i></a>
+                        <a href="#" id="twitterLink"><i class="fab fa-twitter"></i></a>
+                        <a href="#" id="instagramLink"><i class="fab fa-instagram"></i></a>
+                        <a href="#" id="tiktokLink"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>★ Find Us ★</h4>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> <span id="hotelAddress"></span></p>
+                        <p><i class="fas fa-phone"></i> <span id="hotelPhone"></span></p>
+                        <p><i class="fas fa-envelope"></i> <span id="hotelEmail"></span></p>
+                    </address>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="company_profile.html">Company Profile</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">© 2025 <span id="hotelNameCopyright"></span> ✧ All Rights Reserved ✧</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Apply configuration
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update all hotel name instances
+            document.querySelectorAll('#hotelName, #hotelNameTitle, #hotelNameBook, #hotelNameFooter, #hotelNameCopyright').forEach(el => {
+                el.textContent = hotelConfig.name;
+            });
+            
+            // Update tagline
+            document.querySelectorAll('#hotelTaglineFooter').forEach(el => {
+                el.textContent = hotelConfig.tagline;
+            });
+            
+            // Update contact information
+            document.getElementById('hotelAddress').textContent = hotelConfig.address;
+            document.getElementById('hotelPhone').textContent = hotelConfig.phone;
+            document.getElementById('hotelEmail').textContent = hotelConfig.email;
+            
+            // Update social links
+            document.getElementById('discordLink').href = hotelConfig.social.discord;
+            document.getElementById('twitterLink').href = hotelConfig.social.twitter;
+            document.getElementById('instagramLink').href = hotelConfig.social.instagram;
+            document.getElementById('tiktokLink').href = hotelConfig.social.tiktok;
+        });
+    </script>
+</body>
+</html>

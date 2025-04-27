@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - <span id="hotelNameTitle"></span></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <script src="../public/js/config.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <h1>✧ <span id="hotelName"></span> ✧</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="company_profile.html">Company Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="page-header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contacts</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container py-5">
+            <h1 class="text-center mb-5">Contact <span id="hotelNameContact"></span></h1>
+            <!-- Contact Info Section -->
+            <section class="contact-info-section py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <h3>Our Location</h3>
+                                <p><span id="hotelAddress"></span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <h3>Phone Numbers</h3>
+                                <p><span id="hotelPhone"></span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h3>Email Addresses</h3>
+                                <p><span id="hotelEmail"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section class="contact-form-section py-5 bg-light">
+                <div class="container">
+                    <h2 class="section-title text-center mb-5">Send Us a Message</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <form action="controllers/contact_controller.php" method="post" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-group">
+                                            <label for="name" class="form-label">Your Name*</label>
+                                            <input type="text" class="form-control" id="name" name="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">Your Email*</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-group">
+                                            <label for="phone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phone" name="phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-group">
+                                            <label for="subject" class="form-label">Subject*</label>
+                                            <input type="text" class="form-control" id="subject" name="subject" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="message" class="form-label">Your Message*</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Hours Section -->
+            <section class="business-hours-section py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="section-title">Business Hours</h2>
+                            <div class="hours-card">
+                                <div class="hours-item">
+                                    <div class="day">Front Desk:</div>
+                                    <div class="time">24/7</div>
+                                </div>
+                                <div class="hours-item">
+                                    <div class="day">Concierge Services:</div>
+                                    <div class="time">24/7</div>
+                                </div>
+                                <div class="hours-item">
+                                    <div class="day">Restaurant:</div>
+                                    <div class="time">6:00 AM - 11:00 PM</div>
+                                </div>
+                                <div class="hours-item">
+                                    <div class="day">Spa & Wellness:</div>
+                                    <div class="time">8:00 AM - 9:00 PM</div>
+                                </div>
+                                <div class="hours-item">
+                                    <div class="day">Fitness Center:</div>
+                                    <div class="time">6:00 AM - 10:00 PM</div>
+                                </div>
+                                <div class="hours-item">
+                                    <div class="day">Swimming Pool:</div>
+                                    <div class="time">7:00 AM - 8:00 PM</div>
+                                </div>
+                                <div class="hours-item">
+                                    <div class="day">Business Center:</div>
+                                    <div class="time">8:00 AM - 8:00 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="section-title">Follow Us</h2>
+                            <div class="social-card">
+                                <p>Stay connected with us on social media for the latest news, promotions, and updates.</p>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+                                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                                    <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i> TripAdvisor</a>
+                                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i> YouTube</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQs Section -->
+            <section class="faqs-section py-5 bg-light">
+                <div class="container">
+                    <h2 class="section-title text-center mb-5">Frequently Asked Questions</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            What are the check-in and check-out times?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Check-in time is 2:00 PM and check-out time is 12:00 PM. Early check-in and late check-out may be available upon request, subject to availability and additional charges may apply.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Do you offer airport transfers?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Yes, we offer airport transfers for our guests. Please provide your flight details at least 24 hours in advance when making your reservation or contact our concierge desk to arrange transportation.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Is breakfast included with the room?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Breakfast is included in select room packages. Please check your reservation details or contact our front desk to confirm if breakfast is included in your stay.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Do you have facilities for guests with disabilities?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Yes, our hotel is equipped with facilities for guests with disabilities, including wheelchair-accessible rooms, elevators, and public areas. Please inform us of any specific requirements when making your reservation.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            What is your cancellation policy?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Cancellations made 48 hours or more before check-in date will receive a full refund. Cancellations made less than 48 hours before check-in will incur a charge equivalent to one night's stay. No-shows will be charged the full reservation amount.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>✧ <span id="hotelNameFooter"></span> ✧</h4>
+                    <p id="hotelTaglineFooter"></p>
+                    <div class="social-links">
+                        <a href="#" id="discordLink"><i class="fab fa-discord"></i></a>
+                        <a href="#" id="twitterLink"><i class="fab fa-twitter"></i></a>
+                        <a href="#" id="instagramLink"><i class="fab fa-instagram"></i></a>
+                        <a href="#" id="tiktokLink"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>★ Find Us ★</h4>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> <span id="hotelAddress"></span></p>
+                        <p><i class="fas fa-phone"></i> <span id="hotelPhone"></span></p>
+                        <p><i class="fas fa-envelope"></i> <span id="hotelEmail"></span></p>
+                    </address>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="company_profile.html">Company Profile</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">© 2025 <span id="hotelNameCopyright"></span> ✧ All Rights Reserved ✧</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Apply configuration
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update all hotel name instances
+            document.querySelectorAll('#hotelName, #hotelNameTitle, #hotelNameContact, #hotelNameFooter, #hotelNameCopyright').forEach(el => {
+                el.textContent = hotelConfig.name;
+            });
+            
+            // Update tagline
+            document.querySelectorAll('#hotelTaglineFooter').forEach(el => {
+                el.textContent = hotelConfig.tagline;
+            });
+            
+            // Update contact information
+            document.getElementById('hotelAddress').textContent = hotelConfig.address;
+            document.getElementById('hotelPhone').textContent = hotelConfig.phone;
+            document.getElementById('hotelEmail').textContent = hotelConfig.email;
+            
+            // Update social links
+            document.getElementById('discordLink').href = hotelConfig.social.discord;
+            document.getElementById('twitterLink').href = hotelConfig.social.twitter;
+            document.getElementById('instagramLink').href = hotelConfig.social.instagram;
+            document.getElementById('tiktokLink').href = hotelConfig.social.tiktok;
+        });
+    </script>
+</body>
+</html>

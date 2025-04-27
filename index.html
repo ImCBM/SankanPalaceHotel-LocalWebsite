@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankan Palace Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <script src="public/js/config.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1>✧ <span id="hotelName"></span> ✧</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="views/company_profile.html">Compnay Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="views/reservation.html">Book Now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="views/contacts.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hero-section">
+            <div class="hero-text container">
+                <h2>Welcome to <span id="hotelNameHero"></span>! ✧˖°</h2>
+                <p id="hotelTagline"></p>
+                <a href="views/reservation.html" class="btn btn-primary btn-lg">Start Your Adventure</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="section-title">Discover Our Magical World ✧</h2>
+                        <p class="section-description">Step into a world where fantasy meets reality! Our themed hotel brings your favorite anime worlds to life with incredible detail and kawaii charm. Every corner is designed to transport you into an unforgettable adventure!</p>
+                        <p>From magical girl suites to ninja hideouts, each room tells its own unique story. Are you ready to be part of our anime universe?</p>
+                        <a href="views/company_profile.html" class="btn btn-outline-primary">Explore More ✧</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="welcome-image">
+                            <img src="" alt="Magical Interior" class="img-fluid rounded shadow" id="welcomeImage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Room Types Section -->
+        <section class="room-types-section py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Themed Rooms ★</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card room-card h-100">
+                            <img src="" class="card-img-top" alt="Magical Girl Suite" id="magicalGirlRoomImage">
+                            <div class="card-body">
+                                <h3 class="card-title">Magical Girl Suite ✧</h3>
+                                <p class="card-text">Transform into your magical alter ego in our pink-themed wonderland!</p>
+                                <ul class="room-features">
+                                    <li><i class="fas fa-star"></i> Magic Wand Collection</li>
+                                    <li><i class="fas fa-moon"></i> Starlight Ceiling</li>
+                                    <li><i class="fas fa-heart"></i> Heart-Shaped Bath</li>
+                                </ul>
+                                <p class="price">100 Magic Crystals/night ✧</p>
+                                <a href="views/reservation.html" class="btn btn-primary">Book Now ➜</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card room-card h-100">
+                            <img src="" class="card-img-top" alt="Ninja Hideout" id="ninjaHideoutRoomImage">
+                            <div class="card-body">
+                                <h3 class="card-title">Ninja Hideout ⚔️</h3>
+                                <p class="card-text">Perfect for aspiring shinobi! Train in style with authentic ninja decor.</p>
+                                <ul class="room-features">
+                                    <li><i class="fas fa-scroll"></i> Jutsu Scrolls</li>
+                                    <li><i class="fas fa-tree"></i> Zen Garden View</li>
+                                    <li><i class="fas fa-fire"></i> Training Area</li>
+                                </ul>
+                                <p class="price">300 Chakra Points/night ✧</p>
+                                <a href="views/reservation.html" class="btn btn-primary">Book Now ➜</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card room-card h-100">
+                            <img src="" class="card-img-top" alt="Mecha Pilot Chamber" id="mechaPilotRoomImage">
+                            <div class="card-body">
+                                <h3 class="card-title">Mecha Pilot Chamber 🤖</h3>
+                                <p class="card-text">Live like a mecha pilot in our high-tech themed suite!</p>
+                                <ul class="room-features">
+                                    <li><i class="fas fa-robot"></i> Cockpit Bed</li>
+                                    <li><i class="fas fa-microchip"></i> AI Assistant</li>
+                                    <li><i class="fas fa-gamepad"></i> Mecha Simulator</li>
+                                </ul>
+                                <p class="price">500 Tech Points/night ✧</p>
+                                <a href="views/reservation.html" class="btn btn-primary">Book Now ➜</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Magical Amenities ✧</h2>
+                <div class="row text-center">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Anime Cafe</h3>
+                            <p>Themed snacks and character-inspired drinks!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="feature-item">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>Gaming Zone</h3>
+                            <p>Latest Japanese arcade games and consoles</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="feature-item">
+                            <i class="fas fa-camera"></i>
+                            <h3>Cosplay Studio</h3>
+                            <p>Professional photo sets and costume rentals</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="feature-item">
+                            <i class="fas fa-store"></i>
+                            <h3>Kawaii Shop</h3>
+                            <p>Exclusive anime merchandise and souvenirs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section class="special-offers-section py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Special Events ★</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="offer-card">
+                            <div class="offer-content">
+                                <h3>Magical Festival ✧</h3>
+                                <p>10% off during our monthly anime screening nights!</p>
+                                <a href="views/reservation.html" class="btn btn-primary">Join Now ➜</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="offer-card">
+                            <div class="offer-content">
+                                <h3>Cosplay Weekend ★</h3>
+                                <p>15% off when you stay in costume!</p>
+                                <a href="views/reservation.html" class="btn btn-primary">Transform Now ➜</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>✧ <span id="hotelNameFooter"></span> ✧</h4>
+                    <p id="hotelTaglineFooter"></p>
+                    <div class="social-links">
+                        <a href="#" id="discordLink"><i class="fab fa-discord"></i></a>
+                        <a href="#" id="twitterLink"><i class="fab fa-twitter"></i></a>
+                        <a href="#" id="instagramLink"><i class="fab fa-instagram"></i></a>
+                        <a href="#" id="tiktokLink"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>★ Find Us ★</h4>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> <span id="hotelAddress"></span></p>
+                        <p><i class="fas fa-phone"></i> <span id="hotelPhone"></span></p>
+                        <p><i class="fas fa-envelope"></i> <span id="hotelEmail"></span></p>
+                    </address>
+                </div>
+                <div class="col-md-4">
+                    <h4>☆ Quick Links ☆</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home ♡</a></li>
+                        <li><a href="views/company_profile.html">About Us ★</a></li>
+                        <li><a href="views/reservation.html">Book Now ☆</a></li>
+                        <li><a href="views/contacts.html">Contact ♪</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">© 2025 <span id="hotelNameCopyright"></span> ✧ All Rights Reserved ✧</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Apply configuration
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update all hotel name instances
+            document.querySelectorAll('#hotelName, #hotelNameHero, #hotelNameFooter, #hotelNameCopyright').forEach(el => {
+                el.textContent = hotelConfig.name;
+            });
+            
+            // Update tagline
+            document.querySelectorAll('#hotelTagline, #hotelTaglineFooter').forEach(el => {
+                el.textContent = hotelConfig.tagline;
+            });
+            
+            // Update contact information
+            document.getElementById('hotelAddress').textContent = hotelConfig.address;
+            document.getElementById('hotelPhone').textContent = hotelConfig.phone;
+            document.getElementById('hotelEmail').textContent = hotelConfig.email;
+            
+            // Update social links
+            document.getElementById('discordLink').href = hotelConfig.social.discord;
+            document.getElementById('twitterLink').href = hotelConfig.social.twitter;
+            document.getElementById('instagramLink').href = hotelConfig.social.instagram;
+            document.getElementById('tiktokLink').href = hotelConfig.social.tiktok;
+
+            // Update images
+            document.getElementById('welcomeImage').src = hotelConfig.images.welcome;
+            document.getElementById('magicalGirlRoomImage').src = hotelConfig.images.rooms.magicalGirl;
+            document.getElementById('ninjaHideoutRoomImage').src = hotelConfig.images.rooms.ninjaHideout;
+            document.getElementById('mechaPilotRoomImage').src = hotelConfig.images.rooms.mechaPilot;
+        });
+    </script>
+</body>
+</html>
