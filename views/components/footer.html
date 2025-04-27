@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-4 mb-md-0">
-                <h4>✧ <span id="hotelNameFooter"></span> ✧</h4>
+                <h4><span id="hotelName"></span></h4>
                 <p id="hotelTaglineFooter"></p>
                 <div class="social-links">
                     <a href="#" id="discordLink"><i class="fab fa-discord"></i></a>
@@ -45,6 +45,9 @@
         const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/');
         const homePath = isIndexPage ? 'index.html' : '../index.html';
         const viewsPath = isIndexPage ? 'views/' : '';
+
+        // Set title
+        document.getElementById('hotelName').textContent = hotelConfig.name;
         
         // Set footer links
         document.getElementById('footer-home').href = homePath;
