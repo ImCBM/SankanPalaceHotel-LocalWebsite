@@ -402,7 +402,7 @@ function calculateBill() {
     let additionalChargePercentage = 0;
     let paymentName = '';
     for (const type of paymentTypes) {
-        if (type.payment_type_id === paymentType) {
+        if (String(type.payment_type_id) === String(paymentType)) {
             additionalChargePercentage = parseFloat(type.additional_charge_percentage);
             paymentName = type.payment_name;
             break;

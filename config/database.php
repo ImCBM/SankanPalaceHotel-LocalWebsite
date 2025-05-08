@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $db_name = "five_star_hotel";
+    private $db_name = "SankanHotel_Database";
     private $username = "root";
     private $password = "";
     private $conn;
