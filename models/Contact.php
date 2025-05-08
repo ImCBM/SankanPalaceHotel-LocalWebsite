@@ -1,78 +1,47 @@
 <?php
 class Contact {
-    private $id;
-    private $name;
-    private $email;
-    private $phone;
-    private $subject;
-    private $message;
-    private $date_submitted;
+    private $conn;
+    private $table_name = "contact_messages";
 
-    // Constructor
-    public function __construct($data = []) {
-        $this->name = $data['name'] ?? '';
-        $this->email = $data['email'] ?? '';
-        $this->phone = $data['phone'] ?? '';
-        $this->subject = $data['subject'] ?? '';
-        $this->message = $data['message'] ?? '';
-        $this->date_submitted = date('Y-m-d H:i:s');
+    public $message_id;
+    public $name;
+    public $email;
+    public $phone;
+    public $subject;
+    public $message;
+    public $date_submitted;
+
+    public function __construct($db) {
+        $this->conn = $db;
     }
 
-    // Getters and setters
-    public function getId() {
-        return $this->id;
-    }
-
-    public function setId($id) {
-        $this->id = $id;
-    }
-
-    public function getName() {
-        return $this->name;
-    }
-
-    public function setName($name) {
-        $this->name = $name;
-    }
-
-    public function getEmail() {
-        return $this->email;
-    }
-
-    public function setEmail($email) {
-        $this->email = $email;
-    }
-
-    public function getPhone() {
-        return $this->phone;
-    }
-
-    public function setPhone($phone) {
-        $this->phone = $phone;
-    }
-
-    public function getSubject() {
-        return $this->subject;
-    }
-
-    public function setSubject($subject) {
-        $this->subject = $subject;
-    }
-
-    public function getMessage() {
-        return $this->message;
-    }
-
-    public function setMessage($message) {
-        $this->message = $message;
-    }
-
-    public function getDateSubmitted() {
-        return $this->date_submitted;
-    }
-
-    public function setDateSubmitted($date_submitted) {
-        $this->date_submitted = $date_submitted;
+    // Create a new contact message
+    public function createMessage() {
+        $query = "INSERT INTO " . $this->table_name . " 
+                (name, email, phone, subject, message) 
+                VALUES (?, ?, ?, ?, ?)";
+        
+        $stmt = $this->conn->prepare($query);
+        
+        // Sanitize inputs
+        $this->name = htmlspecialchars(strip_tags($this->name));
+        $this->email = htmlspecialchars(strip_tags($this->email));
+        $this->phone = htmlspecialchars(strip_tags($this->phone));
+        $this->subject = htmlspecialchars(strip_tags($this->subject));
+        $this->message = htmlspecialchars(strip_tags($this->message));
+        
+        // Bind values
+        $stmt->bindParam(1, $this->name);
+        $stmt->bindParam(2, $this->email);
+        $stmt->bindParam(3, $this->phone);
+        $stmt->bindParam(4, $this->subject);
+        $stmt->bindParam(5, $this->message);
+        
+        if($stmt->execute()) {
+            return true;
+        }
+        
+        return false;
     }
 }
 ?>
