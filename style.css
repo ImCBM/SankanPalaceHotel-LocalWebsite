@@ -463,64 +463,55 @@ a:hover {
 
 .team-card {
     background: white;
-    padding: 32px 20px 24px 20px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 350px;
-    margin: 0 auto 32px auto;
-    text-align: center;
-}
-
-.team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .team-image {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    height: auto;
+    position: relative;
+    padding-top: 120%;
     background: #f8f9fa;
-    border-radius: 8px;
-    padding: 0;
-    margin-bottom: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    box-sizing: border-box;
 }
 
 .team-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
+    object-fit: scale-down;
+    border-radius: 12px;
+    margin-block: 15px;
+}
+
+.card-content {
+    padding: 2rem;
+    text-align: left;
 }
 
 .team-card h3 {
-    color: var(--secondary-color);
-    margin: 0 0 4px 0;
     font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--secondary-color);
 }
 
 .team-card .position {
-    color: #888;
+    color: #666;
     font-style: italic;
-    margin-bottom: 12px;
-    font-size: 1.05rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
 }
 
 .team-card p {
     color: var(--text-color);
-    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 0;
+    font-size: 0.95rem;
 }
 
 .gallery-item {

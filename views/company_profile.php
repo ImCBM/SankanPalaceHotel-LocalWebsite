@@ -80,9 +80,11 @@
                     <div class="team-image">
                         <img src="../assets/img/Sankan Hotel/Balalaika.png" alt="Balalaika" class="team-img">
                     </div>
-                    <h3>Balalaika</h3>
-                    <p class="position">Chief Executive Officer</p>
-                    <p>Leading our company with vision and strategic insight, bringing years of experience in luxury hospitality.</p>
+                    <div class="card-content">
+                        <h3>Balalaika</h3>
+                        <p class="position">Chief Executive Officer</p>
+                        <p>Leading our company with vision and strategic insight, bringing years of experience in luxury hospitality.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
@@ -90,9 +92,11 @@
                     <div class="team-image">
                         <img src="../assets/img/Sankan Hotel/Verocchio.png" alt="Verocchio" class="team-img">
                     </div>
-                    <h3>Verocchio</h3>
-                    <p class="position">Director of Operations</p>
-                    <p>Overseeing all operational aspects of our hotel, ensuring seamless service delivery and guest satisfaction.</p>
+                    <div class="card-content">
+                        <h3>Verocchio</h3>
+                        <p class="position">Director of Operations</p>
+                        <p>Overseeing all operational aspects of our hotel, ensuring seamless service delivery and guest satisfaction.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
@@ -100,9 +104,11 @@
                     <div class="team-image">
                         <img src="../assets/img/Sankan Hotel/MrChang.png" alt="Mr. Chang" class="team-img">
                     </div>
-                    <h3>Mr. Chang</h3>
-                    <p class="position">Executive Chef</p>
-                    <p>Bringing innovation and excellence to our dining experiences with his culinary expertise.</p>
+                    <div class="card-content">
+                        <h3>Mr. Chang</h3>
+                        <p class="position">Executive Chef</p>
+                        <p>Bringing innovation and excellence to our dining experiences with his culinary expertise.</p>
+                    </div>
                 </div>
             </div>
         </div>
