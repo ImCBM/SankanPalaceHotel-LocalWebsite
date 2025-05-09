@@ -68,23 +68,16 @@ class Reservation {
     }
 
     // Calculate total bill
-    public function calculateBill($room_rate, $num_days, $payment_type_id) {
+    public function calculateBill($room_rate, $num_days, $payment_type) {
         // Calculate subtotal
         $subtotal = $room_rate * $num_days;
         
-        // Get payment type details
-        $query = "SELECT * FROM payment_types WHERE payment_type_id = ? LIMIT 1";
-        $stmt = $this->conn->prepare($query);
-        $stmt->bindParam(1, $payment_type_id);
-        $stmt->execute();
-        $payment = $stmt->fetch(PDO::FETCH_ASSOC);
-        
         // Calculate additional charge
-        $additional_charge = ($subtotal * $payment['additional_charge_percentage']) / 100;
+        $additional_charge = ($subtotal * $payment_type['additional_charge_percentage']) / 100;
         
         // Calculate discount (only for cash payment)
         $discount = 0;
-        if($payment['payment_name'] == 'Cash') {
+        if($payment_type['payment_name'] == 'Cash') {
             if($num_days >= 3 && $num_days <= 5) {
                 $discount = ($subtotal * 10) / 100; // 10% discount
             } else if($num_days >= 6) {

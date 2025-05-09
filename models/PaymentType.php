@@ -29,16 +29,7 @@ class PaymentType {
         $stmt->bindParam(1, $id);
         $stmt->execute();
 
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-        
-        if($row) {
-            $this->payment_type_id = $row['payment_type_id'];
-            $this->payment_name = $row['payment_name'];
-            $this->additional_charge_percentage = $row['additional_charge_percentage'];
-            return true;
-        }
-        
-        return false;
+        return $stmt;
     }
 }
 ?>

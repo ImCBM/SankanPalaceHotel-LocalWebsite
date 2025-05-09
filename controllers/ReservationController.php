@@ -5,6 +5,10 @@ require_once '../models/Customer.php';
 require_once '../models/Room.php';
 require_once '../models/PaymentType.php';
 
+/**
+ * Handles all reservation-related operations including creation, payment calculations,
+ * and customer management
+ */
 class ReservationController {
     private $db;
     private $reservation;
@@ -21,7 +25,10 @@ class ReservationController {
         $this->paymentType = new PaymentType($this->db);
     }
 
-    // Get all payment types
+    /**
+     * Retrieves all available payment methods from the database
+     * @return array List of payment types with their details
+     */
     public function getAllPaymentTypes() {
         $stmt = $this->paymentType->getAllPaymentTypes();
         $paymentTypes = [];
@@ -33,7 +40,39 @@ class ReservationController {
         return $paymentTypes;
     }
 
-    // Create a new reservation
+    /**
+     * Calculates the total bill including discounts and additional charges
+     * @param float $roomRate Base rate per night
+     * @param int $numNights Number of nights staying
+     * @param int $paymentTypeId Selected payment method ID
+     * @return array Bill details including subtotal, discount, and final amount
+     */
+    public function calculateBill($roomRate, $numNights, $paymentTypeId) {
+        // Get payment type details
+        $stmt = $this->paymentType->getPaymentTypeById($paymentTypeId);
+        $paymentType = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if (!$paymentType) {
+            return [
+                'status' => 'error',
+                'message' => 'Invalid payment type'
+            ];
+        }
+        
+        // Calculate bill using the model
+        $bill = $this->reservation->calculateBill($roomRate, $numNights, $paymentType);
+        
+        return [
+            'status' => 'success',
+            'data' => $bill
+        ];
+    }
+
+    /**
+     * Creates a new reservation with customer details, room selection, and payment info
+     * @param array $data Reservation details including customer info, dates, room preferences
+     * @return array Status of reservation creation with booking details
+     */
     public function createReservation($data) {
         // First, handle customer data
         $this->customer->customer_name = $data['name'];
@@ -75,14 +114,21 @@ class ReservationController {
         $num_days = (strtotime($date_to) - strtotime($date_from)) / (60 * 60 * 24);
         
         // Check for available room
-        $room = $this->room->getAvailableRooms($data['room_capacity'], $data['room_type'], $date_from, $date_to);
-        
-        if(!$room) {
+        $stmt = $this->room->getAvailableRooms($data['room_capacity'], $data['room_type'], $date_from, $date_to);
+        if($stmt->rowCount() === 0) {
             return ['status' => 'error', 'message' => 'No rooms available for the selected dates, capacity, and type.'];
         }
+        $room = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        // Get payment type details
+        $stmt = $this->paymentType->getPaymentTypeById($data['payment_type']);
+        if($stmt->rowCount() === 0) {
+            return ['status' => 'error', 'message' => 'Invalid payment type.'];
+        }
+        $paymentType = $stmt->fetch(PDO::FETCH_ASSOC);
         
         // Calculate the bill
-        $bill = $this->reservation->calculateBill($room['rate_per_day'], $num_days, $data['payment_type']);
+        $bill = $this->reservation->calculateBill($room['rate_per_day'], $num_days, $paymentType);
         
         // Set reservation data
         $this->reservation->customer_id = $customer_id;
@@ -100,10 +146,6 @@ class ReservationController {
         
         // Create reservation
         if($this->reservation->createReservation()) {
-            // Get payment type name
-            $this->paymentType->getPaymentTypeById($data['payment_type']);
-            $payment_name = $this->paymentType->payment_name;
-            
             return [
                 'status' => 'success',
                 'message' => 'Reservation created successfully!',
@@ -115,7 +157,7 @@ class ReservationController {
                 'date_from' => $date_from,
                 'date_to' => $date_to,
                 'num_days' => $num_days,
-                'payment_type' => $payment_name,
+                'payment_type' => $paymentType['payment_name'],
                 'subtotal' => $bill['subtotal'],
                 'discount' => $bill['discount'],
                 'additional_charge' => $bill['additional_charge'],

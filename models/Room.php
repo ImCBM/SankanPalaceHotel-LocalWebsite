@@ -56,12 +56,7 @@ class Room {
         $stmt->bindParam(8, $to_date);
         $stmt->execute();
 
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-        if ($row) {
-            return $row;
-        } else {
-            return false;
-        }
+        return $stmt;
     }
 
     // Get room details by ID
