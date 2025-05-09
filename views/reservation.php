@@ -52,6 +52,7 @@ include 'includes/header.php';
             <!-- Reservation Success -->
             <div class="reservation-success bg-light p-4 rounded shadow">
                 <div class="text-center mb-4">
+                    <!-- Success icon image -->
                     <i class="fas fa-check-circle success-icon"></i>
                     <h2>Reservation Confirmed!</h2>
                     <p>Your booking has been successfully processed. Please check the details below.</p>

@@ -19,6 +19,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0">
+                <!-- Hotel exterior image -->
                 <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Exterior" class="img-fluid rounded shadow">
             </div>
             <div class="col-md-6">
@@ -106,6 +107,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-6 mb-4">
                 <div class="team-card">
+                    <!-- CEO image -->
                     <div class="team-image">
                         <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="CEO" class="img-fluid">
                     </div>
@@ -117,6 +119,7 @@
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
                 <div class="team-card">
+                    <!-- Ops director image -->
                     <div class="team-image">
                         <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Operations Director" class="img-fluid">
                     </div>
@@ -128,6 +131,7 @@
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
                 <div class="team-card">
+                    <!-- Chef image -->
                     <div class="team-image">
                         <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Chef" class="img-fluid">
                     </div>
@@ -139,6 +143,7 @@
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
                 <div class="team-card">
+                    <!-- Customer relations image -->
                     <div class="team-image">
                         <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Customer Relations" class="img-fluid">
                     </div>
@@ -158,31 +163,37 @@
         <h2 class="section-title text-center mb-5">Hotel Gallery</h2>
         <div class="row g-3">
             <div class="col-md-4 col-6">
+                <!-- Lobby image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Lobby" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
+                <!-- Restaurant image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Restaurant" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
+                <!-- Pool image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Swimming Pool" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
+                <!-- Bedroom image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Bedroom" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
+                <!-- Spa image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/3201758/pexels-photo-3201758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Spa" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
+                <!-- Bar image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Bar" class="img-fluid">
                 </div>

@@ -23,6 +23,7 @@
                 <a href="company_profile.php" class="btn btn-outline-primary">About Us</a>
             </div>
             <div class="col-md-6">
+                <!-- Hotel lobby image -->
                 <div class="welcome-image">
                     <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Lobby" class="img-fluid rounded shadow">
                 </div>
@@ -38,6 +39,7 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card room-card h-100">
+                    <!-- Standard room image -->
                     <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="Regular Room">
                     <div class="card-body">
                         <h3 class="card-title">Regular Room</h3>
@@ -54,6 +56,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card room-card h-100">
+                    <!-- Deluxe room image -->
                     <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="Deluxe Room">
                     <div class="card-body">
                         <h3 class="card-title">Deluxe Room</h3>
@@ -70,6 +73,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card room-card h-100">
+                    <!-- Suite room image -->
                     <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="Suite Room">
                     <div class="card-body">
                         <h3 class="card-title">Suite Room</h3>

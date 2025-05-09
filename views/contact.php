@@ -46,6 +46,7 @@ include 'includes/header.php';
                     
                     <div class="contact-item mt-4">
                         <div class="contact-icon">
+                            <!-- Location icon image -->
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
@@ -56,6 +57,7 @@ include 'includes/header.php';
                     
                     <div class="contact-item">
                         <div class="contact-icon">
+                            <!-- Phone icon image -->
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-details">
@@ -67,6 +69,7 @@ include 'includes/header.php';
                     
                     <div class="contact-item">
                         <div class="contact-icon">
+                            <!-- Email icon image -->
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
@@ -78,6 +81,7 @@ include 'includes/header.php';
                     
                     <div class="contact-item">
                         <div class="contact-icon">
+                            <!-- Clock icon image -->
                             <i class="fas fa-clock"></i>
                         </div>
                         <div class="contact-details">
@@ -91,6 +95,7 @@ include 'includes/header.php';
                     <div class="social-links mt-4">
                         <h4>Connect With Us</h4>
                         <div class="d-flex gap-3 mt-2">
+                            <!-- Social media icon images -->
                             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
