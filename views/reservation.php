@@ -5,24 +5,18 @@ require_once '../controllers/ReservationController.php';
 $roomController = new RoomController();
 $reservationController = new ReservationController();
 
-// Get all room capacities
+// Get room info
 $roomCapacities = $roomController->getAllRoomCapacities();
-
-// Get all room types
 $roomTypes = $roomController->getAllRoomTypes();
-
-// Get all payment types
 $paymentTypes = $reservationController->getAllPaymentTypes();
-
-// Get room rates
 $roomRates = $roomController->getRoomRates();
 
-// Initialize variables for reservation process
+// Set up vars
 $reservationSuccess = false;
 $reservationData = null;
 $errorMessage = '';
 
-// Process reservation form if submitted
+// Handle form submit
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_reservation'])) {
     $reservationResult = $reservationController->createReservation($_POST);
     
@@ -37,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_reservation'])
 include 'includes/header.php';
 ?>
 
-<!-- Page Header -->
+<!-- Top banner -->
 <div class="page-header">
     <div class="page-header-overlay"></div>
     <div class="container">
@@ -51,7 +45,7 @@ include 'includes/header.php';
     </div>
 </div>
 
-<!-- Reservation Section -->
+<!-- Main booking section -->
 <section class="reservation-section py-5">
     <div class="container">
         <?php if ($reservationSuccess): ?>

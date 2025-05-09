@@ -3,11 +3,11 @@ require_once '../controllers/ContactController.php';
 
 $contactController = new ContactController();
 
-// Initialize variables
+// Set up vars
 $successMessage = '';
 $errorMessage = '';
 
-// Process contact form if submitted
+// Handle form submit
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_contact'])) {
     $contactResult = $contactController->createMessage($_POST);
     
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_contact'])) {
 include 'includes/header.php';
 ?>
 
-<!-- Page Header -->
+<!-- Top banner -->
 <div class="page-header">
     <div class="page-header-overlay"></div>
     <div class="container">
@@ -35,7 +35,7 @@ include 'includes/header.php';
     </div>
 </div>
 
-<!-- Contact Section -->
+<!-- Contact form and info -->
 <section class="contact-section py-5">
     <div class="container">
         <div class="row">
@@ -157,7 +157,7 @@ include 'includes/header.php';
     </div>
 </section>
 
-<!-- Map Section -->
+<!-- Map -->
 <section class="map-section py-5 bg-light">
     <div class="container">
         <h2 class="section-title text-center mb-4">Our Location</h2>
@@ -167,7 +167,7 @@ include 'includes/header.php';
     </div>
 </section>
 
-<!-- FAQ Section -->
+<!-- FAQs -->
 <section class="faq-section py-5">
     <div class="container">
         <h2 class="section-title text-center mb-5">Frequently Asked Questions</h2>

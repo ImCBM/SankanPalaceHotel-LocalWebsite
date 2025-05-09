@@ -1,17 +1,29 @@
 <?php
+/**
+ * Manages room sizes
+ */
 class RoomCapacity {
+    // Database connection and table name
     private $conn;
     private $table_name = "room_capacities";
 
+    // Room capacity properties
     public $room_capacity_id;
     public $capacity_name;
     public $max_guests;
 
+    /**
+     * Sets up DB connection
+     * @param PDO $db Database connection object
+     */
     public function __construct($db) {
         $this->conn = $db;
     }
 
-    // Get all room capacities
+    /**
+     * Shows all room sizes
+     * @return PDOStatement Query result containing all room capacities
+     */
     public function getAllRoomCapacities() {
         try {
             $query = "SELECT * FROM " . $this->table_name . " ORDER BY room_capacity_id ASC";
@@ -27,7 +39,11 @@ class RoomCapacity {
         }
     }
 
-    // Get room capacity by ID
+    /**
+     * Gets one room size
+     * @param int $id Room capacity ID to fetch
+     * @return bool True if room capacity found and data loaded, false otherwise
+     */
     public function getRoomCapacityById($id) {
         $query = "SELECT * FROM " . $this->table_name . " WHERE room_capacity_id = ? LIMIT 1";
         

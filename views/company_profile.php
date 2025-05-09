@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 
-<!-- Page Header -->
+<!-- Top banner -->
 <div class="page-header">
     <div class="page-header-overlay"></div>
     <div class="container">
@@ -14,7 +14,7 @@
     </div>
 </div>
 
-<!-- About Section -->
+<!-- About us -->
 <section class="about-section py-5">
     <div class="container">
         <div class="row align-items-center">
@@ -31,7 +31,7 @@
     </div>
 </section>
 
-<!-- Mission Section -->
+<!-- Mission & values -->
 <section class="mission-section py-5 bg-light">
     <div class="container">
         <div class="row">
@@ -66,7 +66,7 @@
     </div>
 </section>
 
-<!-- Achievements Section -->
+<!-- Achievements -->
 <section class="achievements-section py-5">
     <div class="container">
         <h2 class="section-title text-center mb-5">Our Achievements</h2>
@@ -99,7 +99,7 @@
     </div>
 </section>
 
-<!-- Team Section -->
+<!-- Company Team -->
 <section class="team-section py-5 bg-light">
     <div class="container">
         <h2 class="section-title text-center mb-5">Our Leadership Team</h2>
@@ -152,7 +152,7 @@
     </div>
 </section>
 
-<!-- Gallery Section -->
+<!-- Hotel Gallery -->
 <section class="gallery-section py-5">
     <div class="container">
         <h2 class="section-title text-center mb-5">Hotel Gallery</h2>
@@ -191,7 +191,7 @@
     </div>
 </section>
 
-<!-- Call to Action -->
+<!-- Book now -->
 <section class="cta-section py-5 bg-primary text-white">
     <div class="container text-center">
         <h2>Experience the Luxury</h2>

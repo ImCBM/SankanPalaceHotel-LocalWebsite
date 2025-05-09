@@ -2,6 +2,9 @@
 require_once '../config/database.php';
 require_once '../models/Contact.php';
 
+/**
+ * Handles guest messages
+ */
 class ContactController {
     private $db;
     private $contact;
@@ -12,7 +15,11 @@ class ContactController {
         $this->contact = new Contact($this->db);
     }
 
-    // Create a new contact message
+    /**
+     * Saves new message
+     * @param array $data Message details including name, email, subject, and message
+     * @return array Status of message creation
+     */
     public function createMessage($data) {
         // Validate inputs
         if(empty($data['name']) || empty($data['email']) || empty($data['subject']) || empty($data['message'])) {

@@ -1,8 +1,13 @@
 <?php
+/**
+ * Stores guest messages
+ */
 class Contact {
+    // Database connection and table name
     private $conn;
     private $table_name = "contact_messages";
 
+    // Contact message properties
     public $message_id;
     public $name;
     public $email;
@@ -11,11 +16,18 @@ class Contact {
     public $message;
     public $date_submitted;
 
+    /**
+     * Sets up DB connection
+     * @param PDO $db Database connection object
+     */
     public function __construct($db) {
         $this->conn = $db;
     }
 
-    // Create a new contact message
+    /**
+     * Saves message to DB
+     * @return bool True if message was created successfully, false otherwise
+     */
     public function createMessage() {
         $query = "INSERT INTO " . $this->table_name . " 
                 (name, email, phone, subject, message) 

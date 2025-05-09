@@ -1,8 +1,13 @@
 <?php
+/**
+ * Manages bookings
+ */
 class Reservation {
+    // Database connection and table name
     private $conn;
     private $table_name = "reservations";
 
+    // Reservation properties
     public $reservation_id;
     public $customer_id;
     public $room_id;
@@ -17,11 +22,18 @@ class Reservation {
     public $additional_charge;
     public $total_bill;
 
+    /**
+     * Sets up DB connection
+     * @param PDO $db Database connection object
+     */
     public function __construct($db) {
         $this->conn = $db;
     }
 
-    // Create a new reservation
+    /**
+     * Saves booking to DB
+     * @return bool True if reservation was created successfully, false otherwise
+     */
     public function createReservation() {
         $query = "INSERT INTO " . $this->table_name . " 
                 (customer_id, room_id, date_reserved, date_from, date_to, payment_type_id, 
@@ -67,7 +79,13 @@ class Reservation {
         return false;
     }
 
-    // Calculate total bill
+    /**
+     * Works out total bill
+     * @param float $room_rate Daily room rate
+     * @param int $num_days Number of days staying
+     * @param array $payment_type Payment type details including additional charge percentage
+     * @return array Bill breakdown including subtotal, additional charge, discount, and total
+     */
     public function calculateBill($room_rate, $num_days, $payment_type) {
         // Calculate subtotal
         $subtotal = $room_rate * $num_days;

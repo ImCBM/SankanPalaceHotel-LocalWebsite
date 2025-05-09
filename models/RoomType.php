@@ -1,17 +1,29 @@
 <?php
+/**
+ * Manages room types
+ */
 class RoomType {
+    // Database connection and table name
     private $conn;
     private $table_name = "room_types";
 
+    // Room type properties
     public $room_type_id;
     public $room_type;
     public $description;
 
+    /**
+     * Sets up DB connection
+     * @param PDO $db Database connection object
+     */
     public function __construct($db) {
         $this->conn = $db;
     }
 
-    // Get all room types
+    /**
+     * Shows all room types
+     * @return PDOStatement Query result containing all room types
+     */
     public function getAllRoomTypes() {
         try {
             $query = "SELECT * FROM " . $this->table_name . " ORDER BY room_type_id ASC";
@@ -27,7 +39,11 @@ class RoomType {
         }
     }
 
-    // Get room type by ID
+    /**
+     * Gets one room type
+     * @param int $id Room type ID to fetch
+     * @return bool True if room type found and data loaded, false otherwise
+     */
     public function getRoomTypeById($id) {
         $query = "SELECT * FROM " . $this->table_name . " WHERE room_type_id = ? LIMIT 1";
         

@@ -1,18 +1,30 @@
 <?php
+/**
+ * Manages guest info
+ */
 class Customer {
+    // Database connection and table name
     private $conn;
     private $table_name = "customers";
 
+    // Customer properties
     public $customer_id;
     public $customer_name;
     public $contact_number;
     public $email;
 
+    /**
+     * Sets up DB connection
+     * @param PDO $db Database connection object
+     */
     public function __construct($db) {
         $this->conn = $db;
     }
 
-    // Create a new customer
+    /**
+     * Saves new guest
+     * @return bool True if customer was created successfully, false otherwise
+     */
     public function createCustomer() {
         $query = "INSERT INTO " . $this->table_name . " 
                 (customer_name, contact_number, email) 
@@ -39,7 +51,10 @@ class Customer {
         return false;
     }
 
-    // Check if customer exists by email
+    /**
+     * Checks if guest exists
+     * @return bool True if customer exists, false otherwise
+     */
     public function checkCustomerExists() {
         $query = "SELECT customer_id FROM " . $this->table_name . " WHERE email = ? LIMIT 1";
         

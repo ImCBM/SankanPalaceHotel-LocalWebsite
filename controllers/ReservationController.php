@@ -6,8 +6,7 @@ require_once '../models/Room.php';
 require_once '../models/PaymentType.php';
 
 /**
- * Handles all reservation-related operations including creation, payment calculations,
- * and customer management
+ * Handles bookings and payments
  */
 class ReservationController {
     private $db;
@@ -26,7 +25,7 @@ class ReservationController {
     }
 
     /**
-     * Retrieves all available payment methods from the database
+     * Shows payment options
      * @return array List of payment types with their details
      */
     public function getAllPaymentTypes() {
@@ -41,14 +40,14 @@ class ReservationController {
     }
 
     /**
-     * Calculates the total bill including discounts and additional charges
+     * Calculates total bill
      * @param float $roomRate Base rate per night
      * @param int $numNights Number of nights staying
      * @param int $paymentTypeId Selected payment method ID
      * @return array Bill details including subtotal, discount, and final amount
      */
     public function calculateBill($roomRate, $numNights, $paymentTypeId) {
-        // Get payment type details
+        // Fetch payment type details to apply correct pricing rules
         $stmt = $this->paymentType->getPaymentTypeById($paymentTypeId);
         $paymentType = $stmt->fetch(PDO::FETCH_ASSOC);
         
@@ -59,7 +58,7 @@ class ReservationController {
             ];
         }
         
-        // Calculate bill using the model
+        // Calculate final bill with payment-specific adjustments
         $bill = $this->reservation->calculateBill($roomRate, $numNights, $paymentType);
         
         return [
@@ -69,21 +68,21 @@ class ReservationController {
     }
 
     /**
-     * Creates a new reservation with customer details, room selection, and payment info
+     * Creates new booking
      * @param array $data Reservation details including customer info, dates, room preferences
      * @return array Status of reservation creation with booking details
      */
     public function createReservation($data) {
-        // First, handle customer data
+        // Handle customer information - create new or retrieve existing
         $this->customer->customer_name = $data['name'];
         $this->customer->contact_number = $data['phone'];
         $this->customer->email = $data['email'];
         
-        // Check if customer already exists
+        // Check for existing customer to avoid duplicates
         if($this->customer->checkCustomerExists()) {
             $customer_id = $this->customer->customer_id;
         } else {
-            // Create new customer
+            // Create new customer record if doesn't exist
             if($this->customer->createCustomer()) {
                 $customer_id = $this->customer->customer_id;
             } else {
@@ -91,46 +90,47 @@ class ReservationController {
             }
         }
         
-        // Validate room information
+        // Validate required room selection parameters
         if(!isset($data['room_capacity']) || !isset($data['room_type']) || !isset($data['payment_type'])) {
             return ['status' => 'error', 'message' => 'Please select room capacity, room type, and payment type.'];
         }
         
-        // Validate dates
+        // Validate reservation dates
         if(!isset($data['date_from']) || !isset($data['date_to'])) {
             return ['status' => 'error', 'message' => 'Please select valid dates for your reservation.'];
         }
         
+        // Format dates and calculate stay duration
         $date_from = date('Y-m-d', strtotime($data['date_from']));
         $date_to = date('Y-m-d', strtotime($data['date_to']));
         $date_reserved = date('Y-m-d');
         
-        // Check that check-out date is after check-in date
+        // Ensure valid date range
         if(strtotime($date_to) <= strtotime($date_from)) {
             return ['status' => 'error', 'message' => 'Check-out date must be after check-in date.'];
         }
         
-        // Calculate number of days
+        // Calculate total nights for billing
         $num_days = (strtotime($date_to) - strtotime($date_from)) / (60 * 60 * 24);
         
-        // Check for available room
+        // Check room availability for selected criteria
         $stmt = $this->room->getAvailableRooms($data['room_capacity'], $data['room_type'], $date_from, $date_to);
         if($stmt->rowCount() === 0) {
             return ['status' => 'error', 'message' => 'No rooms available for the selected dates, capacity, and type.'];
         }
         $room = $stmt->fetch(PDO::FETCH_ASSOC);
         
-        // Get payment type details
+        // Validate payment type
         $stmt = $this->paymentType->getPaymentTypeById($data['payment_type']);
         if($stmt->rowCount() === 0) {
             return ['status' => 'error', 'message' => 'Invalid payment type.'];
         }
         $paymentType = $stmt->fetch(PDO::FETCH_ASSOC);
         
-        // Calculate the bill
+        // Calculate final bill with all charges
         $bill = $this->reservation->calculateBill($room['rate_per_day'], $num_days, $paymentType);
         
-        // Set reservation data
+        // Set reservation details
         $this->reservation->customer_id = $customer_id;
         $this->reservation->room_id = $room['room_id'];
         $this->reservation->date_reserved = $date_reserved;
@@ -144,7 +144,7 @@ class ReservationController {
         $this->reservation->additional_charge = $bill['additional_charge'];
         $this->reservation->total_bill = $bill['total_bill'];
         
-        // Create reservation
+        // Create reservation record
         if($this->reservation->createReservation()) {
             return [
                 'status' => 'success',

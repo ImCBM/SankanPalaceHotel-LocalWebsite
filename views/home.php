@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 
-<!-- Hero Section -->
+<!-- Hero banner -->
 <div class="hero-section">
     <div class="hero-overlay"></div>
     <div class="container">
@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<!-- Welcome Section -->
+<!-- Intro -->
 <section class="welcome-section py-5">
     <div class="container">
         <div class="row align-items-center">
@@ -31,7 +31,7 @@
     </div>
 </section>
 
-<!-- Room Types Section -->
+<!-- Room options -->
 <section class="room-types-section py-5 bg-light">
     <div class="container">
         <h2 class="section-title text-center mb-5">Our Luxury Accommodations</h2>
@@ -88,7 +88,7 @@
     </div>
 </section>
 
-<!-- Amenities Section -->
+<!-- Hotel features -->
 <section class="amenities-section py-5">
     <div class="container">
         <h2 class="section-title text-center mb-5">Premium Amenities</h2>
@@ -125,7 +125,7 @@
     </div>
 </section>
 
-<!-- Special Offers Section -->
+<!-- Deals -->
 <section class="special-offers-section py-5 bg-light">
     <div class="container">
         <h2 class="section-title text-center mb-5">Special Offers</h2>
@@ -152,7 +152,7 @@
     </div>
 </section>
 
-<!-- Testimonials Section -->
+<!-- Guest reviews -->
 <section class="testimonials-section py-5">
     <div class="container">
         <h2 class="section-title text-center mb-5">What Our Guests Say</h2>

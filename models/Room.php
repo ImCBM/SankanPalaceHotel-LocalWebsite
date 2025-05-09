@@ -1,8 +1,13 @@
 <?php
+/**
+ * Manages room data
+ */
 class Room {
+    // Database connection and table name
     private $conn;
     private $table_name = "rooms";
 
+    // Room properties
     public $room_id;
     public $room_number;
     public $room_type_id;
@@ -10,11 +15,18 @@ class Room {
     public $rate_per_day;
     public $is_available;
 
+    /**
+     * Sets up DB connection
+     * @param PDO $db Database connection object
+     */
     public function __construct($db) {
         $this->conn = $db;
     }
 
-    // Get all rooms
+    /**
+     * Gets all rooms
+     * @return PDOStatement Query result containing all room details
+     */
     public function getAllRooms() {
         $query = "SELECT r.*, rt.room_type, rc.capacity_name 
                  FROM " . $this->table_name . " r
@@ -28,7 +40,14 @@ class Room {
         return $stmt;
     }
 
-    // Get available rooms by capacity and type
+    /**
+     * Finds free rooms for dates
+     * @param int $capacity_id Room capacity ID
+     * @param int $type_id Room type ID
+     * @param string $from_date Check-in date
+     * @param string $to_date Check-out date
+     * @return PDOStatement Query result containing available room details
+     */
     public function getAvailableRooms($capacity_id, $type_id, $from_date, $to_date) {
         $query = "SELECT r.*, rt.room_type, rc.capacity_name 
                  FROM " . $this->table_name . " r
@@ -59,7 +78,11 @@ class Room {
         return $stmt;
     }
 
-    // Get room details by ID
+    /**
+     * Gets one room by ID
+     * @param int $id Room ID to fetch
+     * @return bool True if room found and data loaded, false otherwise
+     */
     public function getRoomById($id) {
         $query = "SELECT r.*, rt.room_type, rc.capacity_name 
                  FROM " . $this->table_name . " r
@@ -87,7 +110,10 @@ class Room {
         return false;
     }
 
-    // Get room rates
+    /**
+     * Shows room prices
+     * @return PDOStatement Query result containing room rates
+     */
     public function getRoomRates() {
         $query = "SELECT rc.capacity_name, rt.room_type, r.rate_per_day 
                  FROM " . $this->table_name . " r

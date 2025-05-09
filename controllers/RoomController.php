@@ -4,6 +4,9 @@ require_once '../models/Room.php';
 require_once '../models/RoomType.php';
 require_once '../models/RoomCapacity.php';
 
+/**
+ * Handles room info
+ */
 class RoomController {
     private $db;
     private $room;
@@ -18,8 +21,12 @@ class RoomController {
         $this->roomCapacity = new RoomCapacity($this->db);
     }
 
-    // Get all rooms
+    /**
+     * Shows all rooms from DB
+     * @return array List of all rooms in the hotel
+     */
     public function getAllRooms() {
+        // Fetch all rooms with their current status and details
         $stmt = $this->room->getAllRooms();
         $rooms = [];
         
@@ -30,8 +37,12 @@ class RoomController {
         return $rooms;
     }
 
-    // Get all room types
+    /**
+     * Shows room types (Standard, Deluxe, etc.)
+     * @return array List of room types with their descriptions
+     */
     public function getAllRoomTypes() {
+        // Retrieve all room categories and their descriptions
         $stmt = $this->roomType->getAllRoomTypes();
         $roomTypes = [];
         
@@ -42,8 +53,12 @@ class RoomController {
         return $roomTypes;
     }
 
-    // Get all room capacities
+    /**
+     * Shows room sizes (Single, Double, Family)
+     * @return array List of room capacities with their details
+     */
     public function getAllRoomCapacities() {
+        // Get all room capacity options with their details
         $stmt = $this->roomCapacity->getAllRoomCapacities();
         $roomCapacities = [];
         
@@ -54,8 +69,16 @@ class RoomController {
         return $roomCapacities;
     }
 
-    // Get available rooms
+    /**
+     * Checks rooms based on dates
+     * @param int $capacity_id Desired room capacity
+     * @param int $type_id Desired room type
+     * @param string $from_date Check-in date
+     * @param string $to_date Check-out date
+     * @return array|false Available room details or false if none found
+     */
     public function getAvailableRooms($capacity_id, $type_id, $from_date, $to_date) {
+        // Query for rooms matching criteria and available in date range
         $stmt = $this->room->getAvailableRooms($capacity_id, $type_id, $from_date, $to_date);
         if($stmt->rowCount() > 0) {
             return $stmt->fetch(PDO::FETCH_ASSOC);
@@ -63,8 +86,12 @@ class RoomController {
         return false;
     }
 
-    // Get room rates
+    /**
+     * Shows room prices
+     * @return array List of room rates with their conditions
+     */
     public function getRoomRates() {
+        // Fetch current pricing for all room configurations
         $stmt = $this->room->getRoomRates();
         $rates = [];
         

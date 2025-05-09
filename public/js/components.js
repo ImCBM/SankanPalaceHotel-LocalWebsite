@@ -1,24 +1,26 @@
-// Component loader and configuration
+/**
+ * Loads header, footer, and hero sections
+ */
 document.addEventListener('DOMContentLoaded', function() {
-    // Determine the correct path for components based on current page
+    // Get path based on page
     const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/');
     const componentPath = isIndexPage ? 'views/components/' : '../views/components/';
     
-    // Load header component
+    // Load header
     fetch(componentPath + 'header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
             setupHeader();
             
-            // Add hero section for index page
+            // Add hero for index page
             if (isIndexPage) {
                 addHeroSection();
             }
         })
         .catch(error => console.error('Error loading header:', error));
 
-    // Load footer component
+    // Load footer
     fetch(componentPath + 'footer.html')
         .then(response => response.text())
         .then(data => {
@@ -28,15 +30,16 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error loading footer:', error));
 });
 
-// Setup header after loading
+/**
+ * Sets up header
+ */
 function setupHeader() {
-    // Update all hotel name instances in header
+    // Update hotel name
     document.querySelectorAll('#hotelName').forEach(el => {
         el.textContent = hotelConfig.name;
     });
     
-    // Set active navigation item based on current page
-    const currentPage = window.location.pathname.split('/').pop();
+    // Map pages to nav IDs
     const navItems = {
         'index.html': 'nav-home',
         'company_profile.html': 'nav-profile',
@@ -44,11 +47,13 @@ function setupHeader() {
         'contacts.html': 'nav-contacts'
     };
     
+    // Set active nav
+    const currentPage = window.location.pathname.split('/').pop();
     if (navItems[currentPage]) {
         document.getElementById(navItems[currentPage]).classList.add('active');
     }
     
-    // Set page title and breadcrumb
+    // Map pages to titles
     const pageTitles = {
         'index.html': 'Home',
         'company_profile.html': 'Company Profile',
@@ -56,13 +61,16 @@ function setupHeader() {
         'contacts.html': 'Contacts'
     };
     
+    // Update titles
     if (pageTitles[currentPage]) {
         document.getElementById('page-title').textContent = pageTitles[currentPage];
         document.getElementById('current-page').textContent = pageTitles[currentPage];
     }
 }
 
-// Add hero section for index page
+/**
+ * Adds hero section
+ */
 function addHeroSection() {
     const headerElement = document.querySelector('.header');
     const heroSection = document.createElement('div');
@@ -75,18 +83,20 @@ function addHeroSection() {
         </div>
     `;
     
-    // Insert hero section after the navbar
+    // Add hero after navbar
     const navbar = headerElement.querySelector('.navbar');
     navbar.parentNode.insertBefore(heroSection, navbar.nextSibling);
     
-    // Update hero section content
+    // Update hero content
     document.getElementById('hotelNameHero').textContent = hotelConfig.name;
     document.getElementById('hotelTagline').textContent = hotelConfig.tagline;
 }
 
-// Setup footer after loading
+/**
+ * Sets up footer
+ */
 function setupFooter() {
-    // Update all hotel name instances in footer
+    // Update hotel name
     document.querySelectorAll('#hotelNameFooter, #hotelNameCopyright').forEach(el => {
         el.textContent = hotelConfig.name;
     });
@@ -96,7 +106,7 @@ function setupFooter() {
         el.textContent = hotelConfig.tagline;
     });
     
-    // Update contact information
+    // Update contact info
     document.getElementById('hotelAddress').textContent = hotelConfig.address;
     document.getElementById('hotelPhone').textContent = hotelConfig.phone;
     document.getElementById('hotelEmail').textContent = hotelConfig.email;
