@@ -1,15 +1,25 @@
 <?php
+/** PDO
+ * Manages database connection and initialization
+ */
 class Database {
+    // DB config
     private $host = "localhost";
     private $db_name = "SankanHotel_Database";
     private $username = "root";
     private $password = "";
     private $conn;
 
+    /**
+     * Init DB
+     */
     public function __construct() {
         $this->checkAndCreateDatabase();
     }
 
+    /**
+     * Check DB
+     */
     private function checkAndCreateDatabase() {
         try {
             // First connect without database name
@@ -37,6 +47,10 @@ class Database {
         }
     }
 
+    /**
+     * Get connection
+     * @return PDO|null Database connection object or null if connection fails
+     */
     public function getConnection() {
         $this->conn = null;
 
