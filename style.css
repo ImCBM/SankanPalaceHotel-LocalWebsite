@@ -281,6 +281,11 @@ a:hover {
     transition: var(--transition);
     border-radius: var(--border-radius);
     background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
 }
 
 .amenity-item:hover {
@@ -297,6 +302,16 @@ a:hover {
 .amenity-item h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
+}
+
+.amenity-item p {
+    margin-bottom: 0;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* ========== SPECIAL OFFERS SECTION ========== */

@@ -5,8 +5,8 @@
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-content">
-            <h1>Welcome to Five Star Hotel</h1>
-            <p>Experience luxury beyond imagination</p>
+            <h1>Welcome to Sankan</h1>
+            <p>Every stay writes a story</p>
             <a href="reservation.php" class="btn btn-primary btn-lg">Book Now</a>
         </div>
     </div>
@@ -17,9 +17,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <h2 class="section-title">Experience Unmatched Luxury</h2>
-                <p class="section-description">Welcome to Five Star Hotel, where luxury meets comfort. Our hotel offers an elegant and sophisticated environment with top-tier amenities designed to make your stay truly exceptional.</p>
-                <p>From the moment you step through our doors, you'll be greeted with impeccable service and surrounded by exquisite design. Whether you're traveling for business or pleasure, our dedicated staff is committed to ensuring your stay exceeds expectations.</p>
+                <h2 class="section-title">The Quiet Side of Roanapur</h2>
+                <p class="section-description">Every detail is crafted with purpose and excellence. This refined haven blends luxury with unparalleled amenities, offering a stay that goes beyond the extraordinary.</p>
+                <p>Designed for those who seek both distinction and comfort, Sankan Palace is the premier destination. Every moment a statement of purpose and intent.</p>
                 <a href="company_profile.php" class="btn btn-outline-primary">About Us</a>
             </div>
             <div class="col-md-6">
@@ -95,34 +95,36 @@
 <!-- Hotel features -->
 <section class="amenities-section py-5">
     <div class="container">
-        <h2 class="section-title text-center mb-5">Premium Amenities</h2>
+        <h2 class="section-title text-center mb-5">Premium Amenities and Services</h2>
         <div class="row text-center">
             <div class="col-md-3 col-6 mb-4">
                 <div class="amenity-item">
                     <i class="fas fa-swimming-pool"></i>
-                    <h3>Luxury Pool</h3>
-                    <p>Temperature-controlled indoor and outdoor pools</p>
+                    <h3>Concierge Services</h3>
+                    <p>Available 24/7, for discreet assistances to smooth secure chauffeur services. Without question.</p>
                 </div>
             </div>
             <div class="col-md-3 col-6 mb-4">
                 <div class="amenity-item">
                     <i class="fas fa-spa"></i>
-                    <h3>Spa & Wellness</h3>
-                    <p>Full-service spa with rejuvenating treatments</p>
+                    <h3>Spa Sanctuary</h3>
+                    <p>Full-service wellness haven. Our signature restorative treatments for the discerning guest.
+                    </p>
                 </div>
             </div>
             <div class="col-md-3 col-6 mb-4">
                 <div class="amenity-item">
                     <i class="fas fa-utensils"></i>
-                    <h3>Fine Dining</h3>
-                    <p>Award-winning restaurants with gourmet cuisine</p>
+                    <h3>Productivity Lounge</h3>
+                    <p>Fully-equipped suites for private business. Built for confidentiality. Every detail guarded for discretion and efficiency.</p>
                 </div>
             </div>
             <div class="col-md-3 col-6 mb-4">
                 <div class="amenity-item">
                     <i class="fas fa-dumbbell"></i>
-                    <h3>Fitness Center</h3>
-                    <p>State-of-the-art equipment and personal trainers</p>
+                    <h3>Clientele Desk</h3>
+                    <p>Trusted in-house helpdesk for discreet consultation, advisory and documentation support.
+                    </p>
                 </div>
             </div>
         </div>
