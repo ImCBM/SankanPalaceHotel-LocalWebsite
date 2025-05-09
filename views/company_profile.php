@@ -67,8 +67,50 @@
     </div>
 </section>
 
+<!-- Leadership Team -->
+<section class="team-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Our Leadership Team</h2>
+        <div class="text-center mb-4">
+            <i class="fas fa-star text-warning"></i>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="../assets/img/Sankan Hotel/Balalaika.png" alt="Balalaika" class="team-img">
+                    </div>
+                    <h3>Balalaika</h3>
+                    <p class="position">Chief Executive Officer</p>
+                    <p>Leading our company with vision and strategic insight, bringing years of experience in luxury hospitality.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="../assets/img/Sankan Hotel/Verocchio.png" alt="Verocchio" class="team-img">
+                    </div>
+                    <h3>Verocchio</h3>
+                    <p class="position">Director of Operations</p>
+                    <p>Overseeing all operational aspects of our hotel, ensuring seamless service delivery and guest satisfaction.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="../assets/img/Sankan Hotel/MrChang.png" alt="Mr. Chang" class="team-img">
+                    </div>
+                    <h3>Mr. Chang</h3>
+                    <p class="position">Executive Chef</p>
+                    <p>Bringing innovation and excellence to our dining experiences with his culinary expertise.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Achievements -->
-<section class="achievements-section py-5">
+<section class="achievements-section py-5 bg-light">
     <div class="container">
         <h2 class="section-title text-center mb-5">Our Achievements</h2>
         <div class="row text-center">
@@ -100,100 +142,37 @@
     </div>
 </section>
 
-<!-- Company Team -->
-<section class="team-section py-5 bg-light">
-    <div class="container">
-        <h2 class="section-title text-center mb-5">Our Leadership Team</h2>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 mb-4">
-                <div class="team-card">
-                    <!-- CEO image -->
-                    <div class="team-image">
-                        <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="CEO" class="img-fluid">
-                    </div>
-                    <div class="team-info">
-                        <h3>Jonathan Wilson</h3>
-                        <p>Chief Executive Officer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4">
-                <div class="team-card">
-                    <!-- Ops director image -->
-                    <div class="team-image">
-                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Operations Director" class="img-fluid">
-                    </div>
-                    <div class="team-info">
-                        <h3>Sophia Martinez</h3>
-                        <p>Director of Operations</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4">
-                <div class="team-card">
-                    <!-- Chef image -->
-                    <div class="team-image">
-                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Chef" class="img-fluid">
-                    </div>
-                    <div class="team-info">
-                        <h3>Gabriel Laurent</h3>
-                        <p>Executive Chef</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4">
-                <div class="team-card">
-                    <!-- Customer relations image -->
-                    <div class="team-image">
-                        <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Customer Relations" class="img-fluid">
-                    </div>
-                    <div class="team-info">
-                        <h3>Emily Chen</h3>
-                        <p>Customer Relations Manager</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Hotel Gallery -->
 <section class="gallery-section py-5">
     <div class="container">
         <h2 class="section-title text-center mb-5">Hotel Gallery</h2>
         <div class="row g-3">
             <div class="col-md-4 col-6">
-                <!-- Lobby image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Lobby" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
-                <!-- Restaurant image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Restaurant" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
-                <!-- Pool image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Swimming Pool" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
-                <!-- Bedroom image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Bedroom" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
-                <!-- Spa image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/3201758/pexels-photo-3201758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Spa" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-4 col-6">
-                <!-- Bar image -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Bar" class="img-fluid">
                 </div>

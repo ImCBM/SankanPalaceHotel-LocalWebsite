@@ -2,8 +2,8 @@
 -- This script creates the database and tables required for the hotel reservation system
 
 -- Create database
-CREATE DATABASE IF NOT EXISTS five_star_hotel;
-USE five_star_hotel;
+CREATE DATABASE IF NOT EXISTS SankanHotel_Database;
+USE SankanHotel_Database;
 
 -- Create Customers table
 CREATE TABLE IF NOT EXISTS customers (
