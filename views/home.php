@@ -35,7 +35,7 @@
 <!-- Room options -->
 <section class="room-types-section py-5 bg-light">
     <div class="container">
-        <h2 class="section-title text-center mb-5">Our Luxury Accommodations</h2>
+        <h2 class="section-title text-center mb-5">The Accommodations</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card room-card h-100">
@@ -49,7 +49,7 @@
                             <li><i class="fas fa-tv"></i> 55" Smart TV</li>
                             <li><i class="fas fa-bath"></i> Premium Toiletries</li>
                         </ul>
-                        <p class="price">From $100/night</p>
+                        <p class="price">From ₱100/night</p>
                         <a href="reservation.php" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                             <li><i class="fas fa-couch"></i> Sitting Area</li>
                             <li><i class="fas fa-coffee"></i> Nespresso Machine</li>
                         </ul>
-                        <p class="price">From $300/night</p>
+                        <p class="price">From ₱300/night</p>
                         <a href="reservation.php" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                             <li><i class="fas fa-glass-martini-alt"></i> Private Bar</li>
                             <li><i class="fas fa-concierge-bell"></i> Butler Service</li>
                         </ul>
-                        <p class="price">From $500/night</p>
+                        <p class="price">From ₱500/night</p>
                         <a href="reservation.php" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
@@ -99,9 +99,9 @@
         <div class="row text-center">
             <div class="col-md-3 col-6 mb-4">
                 <div class="amenity-item">
-                    <i class="fas fa-swimming-pool"></i>
+                    <i class="fa-solid fa-bell-concierge"></i>
                     <h3>Concierge Services</h3>
-                    <p>Available 24/7, for discreet assistances to smooth secure chauffeur services. Without question.</p>
+                    <p>Available 24/7, for any assistance to smooth secure chauffeur services. Without question.</p>
                 </div>
             </div>
             <div class="col-md-3 col-6 mb-4">
@@ -114,16 +114,16 @@
             </div>
             <div class="col-md-3 col-6 mb-4">
                 <div class="amenity-item">
-                    <i class="fas fa-utensils"></i>
+                    <i class="fa-solid fa-briefcase"></i>
                     <h3>Productivity Lounge</h3>
-                    <p>Fully-equipped suites for private business. Built for confidentiality. Every detail guarded for discretion and efficiency.</p>
+                    <p>Fully-equipped suites for private business. Built for confidentiality and efficiency. Every detail guarded.</p>
                 </div>
             </div>
             <div class="col-md-3 col-6 mb-4">
                 <div class="amenity-item">
-                    <i class="fas fa-dumbbell"></i>
+                    <i class="fa-solid fa-file-shield"></i>
                     <h3>Clientele Desk</h3>
-                    <p>Trusted in-house helpdesk for discreet consultation, advisory and documentation support.
+                    <p>Trusted in-house helpdesk for top-tier consultation, advisory, finance and documentation support.
                     </p>
                 </div>
             </div>

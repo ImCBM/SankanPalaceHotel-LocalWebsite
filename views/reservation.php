@@ -76,10 +76,10 @@ include 'includes/header.php';
                         <h4>Payment Summary</h4>
                         <ul class="list-unstyled">
                             <li><strong>Payment Method:</strong> <?php echo $reservationData['payment_type']; ?></li>
-                            <li><strong>Subtotal:</strong> $<?php echo number_format($reservationData['subtotal'], 2); ?></li>
-                            <li><strong>Discount:</strong> $<?php echo number_format($reservationData['discount'], 2); ?></li>
-                            <li><strong>Additional Charge:</strong> $<?php echo number_format($reservationData['additional_charge'], 2); ?></li>
-                            <li><strong>Total Amount:</strong> $<?php echo number_format($reservationData['total_bill'], 2); ?></li>
+                            <li><strong>Subtotal:</strong> ₱<?php echo number_format($reservationData['subtotal'], 2); ?></li>
+                            <li><strong>Discount:</strong> ₱<?php echo number_format($reservationData['discount'], 2); ?></li>
+                            <li><strong>Additional Charge:</strong> ₱<?php echo number_format($reservationData['additional_charge'], 2); ?></li>
+                            <li><strong>Total Amount:</strong> ₱<?php echo number_format($reservationData['total_bill'], 2); ?></li>
                         </ul>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ include 'includes/header.php';
                                                 <tr>
                                                     <td><?php echo $rate['capacity_name']; ?></td>
                                                     <td><?php echo $rate['room_type']; ?></td>
-                                                    <td>$<?php echo number_format($rate['rate_per_day'], 2); ?></td>
+                                                    <td>₱<?php echo number_format($rate['rate_per_day'], 2); ?></td>
                                                 </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
@@ -226,12 +226,12 @@ include 'includes/header.php';
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="date_from" class="form-label">Check-in Date <span class="text-danger">*</span></label>
-                                    <input type="date" class="form-control" id="date_from" name="date_from" min="<?php echo date('Y-m-d'); ?>" required>
+                                    <input type="date" class="form-control" id="date_from" name="date_from" min="<?php echo date('Y-m-d'); ?>" value="<?php echo date('Y-m-d'); ?>" required>
                                     <div class="invalid-feedback">Please select a check-in date.</div>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="date_to" class="form-label">Check-out Date <span class="text-danger">*</span></label>
-                                    <input type="date" class="form-control" id="date_to" name="date_to" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
+                                    <input type="date" class="form-control" id="date_to" name="date_to" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" value="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
                                     <div class="invalid-feedback">Please select a check-out date.</div>
                                 </div>
                             </div>
@@ -286,14 +286,14 @@ include 'includes/header.php';
                             <div id="price-estimate" class="d-none">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <p><strong>Room Rate per Night:</strong> $<span id="room-rate">0.00</span></p>
+                                        <p><strong>Room Rate per Night:</strong> ₱<span id="room-rate">0.00</span></p>
                                         <p><strong>Number of Nights:</strong> <span id="num-nights">0</span></p>
-                                        <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
+                                        <p><strong>Subtotal:</strong> ₱<span id="subtotal">0.00</span></p>
                                     </div>
                                     <div class="col-md-6">
-                                        <p><strong>Additional Charge:</strong> $<span id="additional-charge">0.00</span></p>
-                                        <p><strong>Discount:</strong> $<span id="discount">0.00</span></p>
-                                        <p><strong>Total Amount:</strong> $<span id="total-amount">0.00</span></p>
+                                        <p><strong>Additional Charge:</strong> ₱<span id="additional-charge">0.00</span></p>
+                                        <p><strong>Discount:</strong> ₱<span id="discount">0.00</span></p>
+                                        <p><strong>Total Amount:</strong> ₱<span id="total-amount">0.00</span></p>
                                     </div>
                                 </div>
                             </div>
