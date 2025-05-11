@@ -24,9 +24,9 @@
             </div>
             <div class="col-md-6">
                 <h2 class="section-title">Where the City Pauses</h2>
-                <p>Amid the rise of Roanapur in the early 1990s — a city defined by its shifting balances of commerce, influence, and quiet understanding — the Sankan Palace Hotel opened in 1995 as a foundation built with intent. Not against the city’s nature, but in step with it.</p>
+                <p>Amid the rise of Roanapur in the early 1990s — a city defined by its shifting balances of commerce, influence, and quiet understanding — the Sankan Palace Hotel opened in 1995 as a foundation built with intent. Not against the city's nature, but in step with it.</p>
                 <p>At a time when most sought safety by retreating from Roanapur, a select few recognized its potential. Designed by international developers with regional ties and foresight, the hotel became a sanctuary engineered for discretion, security, and continuity. Sankan was to offer stability where few could. It became a sanctuary and a bastion for travelers, decision-makers, dignitaries and emissaries.</p>
-                <p>The hotel weathered the shifts of power that marked Roanapur’s evolution. It was never swept up in the city’s chaos — but remained near enough to matter. Today, the Sankan Palace Hotel is both a constant and an institution: a place known not for what is said about it and for what is never said at all.</p>
+                <p>The hotel weathered the shifts of power that marked Roanapur's evolution. It was never swept up in the city's chaos — but remained near enough to matter. Today, the Sankan Palace Hotel is both a constant and an institution: a place known not for what is said about it and for what is never said at all.</p>
             </div>
         </div>
     </div>
@@ -78,24 +78,24 @@
             <div class="col-md-4 mb-4">
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="../assets/img/Sankan Hotel/Balalaika.png" alt="Balalaika" class="team-img">
-                    </div>
-                    <div class="card-content">
-                        <h3>Balalaika</h3>
-                        <p class="position">Chief Executive Officer</p>
-                        <p>Leading our company with vision and strategic insight, bringing years of experience in luxury hospitality.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="team-card">
-                    <div class="team-image">
                         <img src="../assets/img/Sankan Hotel/Verocchio.png" alt="Verocchio" class="team-img">
                     </div>
                     <div class="card-content">
                         <h3>Verocchio</h3>
                         <p class="position">Director of Operations</p>
                         <p>Overseeing all operational aspects of our hotel, ensuring seamless service delivery and guest satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="../assets/img/Sankan Hotel/Balalaika.png" alt="Balalaika" class="team-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Balalaika</h3>
+                        <p class="position">Chief Executive Officer</p>
+                        <p>Leading our company with vision and strategic insight, bringing years of experience in luxury hospitality.</p>
                     </div>
                 </div>
             </div>
