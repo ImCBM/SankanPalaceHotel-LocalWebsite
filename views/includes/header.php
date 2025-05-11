@@ -29,7 +29,7 @@
                             <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'home.php' ? 'active' : ''; ?>" href="../views/home.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'company_profile.php' ? 'active' : ''; ?>" href="../views/company_profile.php">About Us</a>
+                            <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'company_profile.php' ? 'active' : ''; ?>" href="../views/company_profile.php">Company Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'reservation.php' ? 'active' : ''; ?>" href="../views/reservation.php">Reservation</a>

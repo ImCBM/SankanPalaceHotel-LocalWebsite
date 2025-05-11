@@ -23,10 +23,10 @@
                 <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Exterior" class="img-fluid rounded shadow">
             </div>
             <div class="col-md-6">
-                <h2 class="section-title">Our Story</h2>
-                <p>Founded in 1995, Five Star Hotel has established itself as a beacon of luxury and sophistication in the hospitality industry. What began as a vision to create an unparalleled guest experience has evolved into one of the most prestigious hotel brands globally.</p>
-                <p>Our commitment to excellence is reflected in every aspect of our operations, from the careful selection of our locations to the meticulous attention to detail in our design and service offerings. We believe that true luxury lies in the perfect balance of opulence and comfort, creating spaces that feel both extraordinary and welcoming.</p>
-                <p>Over the decades, we have welcomed dignitaries, celebrities, and discerning travelers from around the world, each drawn to our reputation for exceptional service and world-class accommodations.</p>
+                <h2 class="section-title">Where the City Pauses</h2>
+                <p>Amid the rise of Roanapur in the early 1990s — a city defined by its shifting balances of commerce, influence, and quiet understanding — the Sankan Palace Hotel opened in 1995 as a foundation built with intent. Not against the city’s nature, but in step with it.</p>
+                <p>At a time when most sought safety by retreating from Roanapur, a select few recognized its potential. Designed by international developers with regional ties and foresight, the hotel became a sanctuary engineered for discretion, security, and continuity. Sankan was to offer stability where few could. It became a sanctuary and a bastion for travelers, decision-makers, dignitaries and emissaries.</p>
+                <p>The hotel weathered the shifts of power that marked Roanapur’s evolution. It was never swept up in the city’s chaos — but remained near enough to matter. Today, the Sankan Palace Hotel is both a constant and an institution: a place known not for what is said about it and for what is never said at all.</p>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>Our Mission</h3>
-                    <p>To deliver unforgettable experiences through impeccable service, elegant surroundings, and a deep commitment to exceeding our guests' expectations.</p>
+                    <p>Be the bastion of refinement and stability. Servitude without question. Every detail intentional. All action a statement.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
@@ -51,7 +51,7 @@
                         <i class="fas fa-eye"></i>
                     </div>
                     <h3>Our Vision</h3>
-                    <p>To be recognized globally as the pinnacle of luxury hospitality, setting the standard for service excellence and innovative guest experiences.</p>
+                    <p>Remain the gold standard of excellence and sophistication in global hospitality — known not by volume, but by those who return or those who remain.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
@@ -60,7 +60,7 @@
                         <i class="fas fa-gem"></i>
                     </div>
                     <h3>Our Values</h3>
-                    <p>Excellence, integrity, creativity, and personalization guide everything we do, ensuring that each guest interaction reflects our commitment to quality.</p>
+                    <p>Discretion. Precision. Continuity. Trust. These principles shape every space, every gesture, and every conversation — seen or unseen.</p>
                 </div>
             </div>
         </div>

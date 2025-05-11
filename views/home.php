@@ -57,7 +57,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card room-card h-100">
                     <!-- Deluxe room image -->
-                    <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="Deluxe Room">
+                    <img src="https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="Deluxe Room">
                     <div class="card-body">
                         <h3 class="card-title">Deluxe Room</h3>
                         <p class="card-text">Spacious and luxurious accommodations with premium amenities and upscale furnishings.</p>
