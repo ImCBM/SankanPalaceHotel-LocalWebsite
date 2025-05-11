@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <h4>Five Star Hotel</h4>
+                    <h4>Sankan Palace Hotel</h4>
                     <p>Experience luxury beyond imagination</p>
                     <div class="social-links mt-3">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -17,7 +17,7 @@
                     <address>
                         <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Golden City</p>
                         <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
-                        <p><i class="fas fa-envelope"></i> info@fivestarshotel.com</p>
+                        <p><i class="fas fa-envelope"></i> info@sankan.com</p>
                     </address>
                 </div>
                 <div class="col-md-4">
@@ -33,7 +33,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p class="copyright">© <?php echo date('Y'); ?> Five Star Hotel. All Rights Reserved.</p>
+                    <p class="copyright">© <?php echo date('Y'); ?>  The Sankan Palace. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
