@@ -122,76 +122,39 @@
         <div class="row text-center">
             <div class="col-md-3 col-6 mb-4">
                 <div class="achievement-item">
-                    <div class="achievement-count">25+</div>
+                    <div class="achievement-count">30+</div>
                     <div class="achievement-label">Years of Excellence</div>
                 </div>
             </div>
             <div class="col-md-3 col-6 mb-4">
                 <div class="achievement-item">
-                    <div class="achievement-count">15</div>
+                    <div class="achievement-count">25</div>
                     <div class="achievement-label">Industry Awards</div>
                 </div>
             </div>
             <div class="col-md-3 col-6 mb-4">
                 <div class="achievement-item">
-                    <div class="achievement-count">50k+</div>
-                    <div class="achievement-label">Happy Guests</div>
+                    <div class="achievement-count">5</div>
+                    <div class="achievement-label">Global Summits Hosted</div>
                 </div>
             </div>
             <div class="col-md-3 col-6 mb-4">
                 <div class="achievement-item">
-                    <div class="achievement-count">98%</div>
-                    <div class="achievement-label">Satisfaction Rate</div>
+                    <div class="achievement-count">100%</div>
+                    <div class="achievement-label">Safety and Security Audits</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Hotel Gallery -->
-<section class="gallery-section py-5">
-    <div class="container">
-        <h2 class="section-title text-center mb-5">Hotel Gallery</h2>
-        <div class="row g-3">
-            <div class="col-md-4 col-6">
-                <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Lobby" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-4 col-6">
-                <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Restaurant" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-4 col-6">
-                <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Swimming Pool" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-4 col-6">
-                <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Bedroom" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-4 col-6">
-                <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/3201758/pexels-photo-3201758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Spa" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-4 col-6">
-                <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Bar" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- Book now -->
-<section class="cta-section py-5 bg-primary text-white">
+<section class="cta-section py-5 text-white" style="background-color:rgb(118, 119, 122);">
     <div class="container text-center">
         <h2>Experience the Luxury</h2>
-        <p class="lead">Book your stay today and discover why we're the preferred choice for discerning travelers.</p>
+        <p class="lead">Write your own story with us</p>
         <a href="reservation.php" class="btn btn-light btn-lg mt-3">Book Now</a>
     </div>
 </section>
