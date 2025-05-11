@@ -163,7 +163,7 @@ a:hover {
 /* ========== HERO SECTION ========== */
 .hero-section {
     height: 100vh;
-    background-image: url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-image: url('assets/img/Sankan Hotel/Sankan Palace Hero 1.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -317,7 +317,7 @@ a:hover {
 /* ========== SPECIAL OFFERS SECTION ========== */
 .offer-card {
     height: 200px;
-    background-image: url('https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-image: url('assets/img/Sankan Hotel/Offers.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -387,7 +387,7 @@ a:hover {
 /* ========== PAGE HEADER ========== */
 .page-header {
     height: 300px;
-    background-image: url('https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-image: url('assets/img/Sankan Hotel/Sankan Palace Hero 2.png');
     background-size: cover;
     background-position: center;
     display: flex;

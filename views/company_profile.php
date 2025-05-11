@@ -20,7 +20,7 @@
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0">
                 <!-- Hotel exterior image -->
-                <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Exterior" class="img-fluid rounded shadow">
+                <img src="../assets/img/Sankan Hotel/Lobby Image 2.png" alt="Hotel Exterior" class="img-fluid rounded shadow">
             </div>
             <div class="col-md-6">
                 <h2 class="section-title">Where the City Pauses</h2>
