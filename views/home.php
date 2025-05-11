@@ -25,7 +25,7 @@
             <div class="col-md-6">
                 <!-- Hotel lobby image -->
                 <div class="welcome-image">
-                    <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Lobby" class="img-fluid rounded shadow">
+                    <img src="../assets/img/Sankan Hotel/Lobby Image.png" alt="Hotel Lobby" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card room-card h-100">
                     <!-- Standard room image -->
-                    <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="Regular Room">
+                    <img src="../assets/img/Sankan Hotel/RegularRoom.png" class="card-img-top" alt="Regular Room">
                     <div class="card-body">
                         <h3 class="card-title">Regular Room</h3>
                         <p class="card-text">Our standard rooms offer elegant comfort with all essential amenities for a relaxing stay.</p>
@@ -57,7 +57,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card room-card h-100">
                     <!-- Deluxe room image -->
-                    <img src="https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="Deluxe Room">
+                    <img src="../assets/img/Sankan Hotel/DeluxeRoom.png" class="card-img-top" alt="Deluxe Room">
                     <div class="card-body">
                         <h3 class="card-title">Deluxe Room</h3>
                         <p class="card-text">Spacious and luxurious accommodations with premium amenities and upscale furnishings.</p>
@@ -74,7 +74,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card room-card h-100">
                     <!-- Suite room image -->
-                    <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="Suite Room">
+                    <img src="../assets/img/Sankan Hotel/SuiteRoom.png" class="card-img-top" alt="Suite Room">
                     <div class="card-body">
                         <h3 class="card-title">Suite Room</h3>
                         <p class="card-text">The ultimate luxury experience with separate living areas and exclusive amenities.</p>
