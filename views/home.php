@@ -158,64 +158,6 @@
     </div>
 </section>
 
-<!-- Guest reviews -->
-<section class="testimonials-section py-5">
-    <div class="container">
-        <h2 class="section-title text-center mb-5">What Our Guests Say</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"An absolutely stunning hotel with impeccable service. The suite was spacious and beautifully decorated. Will definitely return!"</p>
-                        <div class="guest-info">
-                            <h4>Robert Johnson</h4>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The dining experience was exceptional. The staff went above and beyond to make our anniversary dinner unforgettable."</p>
-                        <div class="guest-info">
-                            <h4>Sarah Williams</h4>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Perfect location for our business conference. The meeting facilities were top-notch and the deluxe rooms exceeded our expectations."</p>
-                        <div class="guest-info">
-                            <h4>Michael Chen</h4>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <?php include 'includes/footer.php'; ?>
