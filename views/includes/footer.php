@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h4>Sankan Palace Hotel</h4>
-                    <p>Experience luxury beyond imagination</p>
+                    <p>The Gold Standard of Roanapur</p>
                     <div class="social-links mt-3">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -15,7 +15,7 @@
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h4>Contact Info</h4>
                     <address>
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Golden City</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Klong Phao Beach, Roanapur, Trat Province, Thailand</p>
                         <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
                         <p><i class="fas fa-envelope"></i> info@sankan.com</p>
                     </address>

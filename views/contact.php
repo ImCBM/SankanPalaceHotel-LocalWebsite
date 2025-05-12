@@ -41,8 +41,8 @@ include 'includes/header.php';
         <div class="row">
             <div class="col-lg-5 mb-4 mb-lg-0">
                 <div class="contact-info bg-light p-4 rounded shadow-sm h-100">
-                    <h2 class="section-title mb-4">Get in Touch</h2>
-                    <p>We are here to assist you with any questions, special requests, or concerns. Our dedicated team is available 24/7 to ensure your experience with us is exceptional.</p>
+                    <h2 class="section-title mb-4">For Arrangements & Liaisons</h2>
+                    <p>For any  inquiries, arrangements, or confidential matters, our team remains at ready for any needed assistance at all hours. Communications are handled with discretion, and every request is met and dealt with.</p>
                     
                     <div class="contact-item mt-4">
                         <div class="contact-icon">
@@ -51,7 +51,7 @@ include 'includes/header.php';
                         </div>
                         <div class="contact-details">
                             <h4>Location</h4>
-                            <p>123 Luxury Avenue, Golden City</p>
+                            <p>Klong Phao Beach, Roanapur, Trat Province 23170, Thailand</p>
                         </div>
                     </div>
                     
@@ -62,8 +62,7 @@ include 'includes/header.php';
                         </div>
                         <div class="contact-details">
                             <h4>Phone</h4>
-                            <p>+1 234 567 8900</p>
-                            <p>+1 234 567 8901</p>
+                            <p>+69 234 567 8900</p>
                         </div>
                     </div>
                     
@@ -74,8 +73,9 @@ include 'includes/header.php';
                         </div>
                         <div class="contact-details">
                             <h4>Email</h4>
-                            <p>info@fivestarshotel.com</p>
-                            <p>reservations@fivestarshotel.com</p>
+                            <p>info@thesankan.com</p>
+                            <p>reservations@thesankan.com</p>
+                            <p>clienteledesk@thesankan.com</p>
                         </div>
                     </div>
                     
@@ -86,14 +86,15 @@ include 'includes/header.php';
                         </div>
                         <div class="contact-details">
                             <h4>Office Hours</h4>
-                            <p>Customer Service: 24/7</p>
                             <p>Front Desk: 24/7</p>
-                            <p>Administration: Monday - Friday, 9:00 AM - 5:00 PM</p>
+                            <p>Customer Service: 24/7</p>
+                            <p>Concierge/Clientel Service: 24/7</p>
+                            <p>Administration: Monday - Friday, 2:00 AM - 11:30 PM</p>
                         </div>
                     </div>
                     
                     <div class="social-links mt-4">
-                        <h4>Connect With Us</h4>
+                        <h4>Establish Contact</h4>
                         <div class="d-flex gap-3 mt-2">
                             <!-- Social media icon images -->
                             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
@@ -167,7 +168,7 @@ include 'includes/header.php';
     <div class="container">
         <h2 class="section-title text-center mb-4">Our Location</h2>
         <div class="map-container rounded shadow">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1616141336195!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d626.4959363514298!2d102.2946611262602!3d12.04079528442375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1747028846532!5m2!1sen!2sph" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 </section>
@@ -187,55 +188,103 @@ include 'includes/header.php';
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Our standard check-in time is 3:00 PM, and check-out time is 12:00 PM. Early check-in or late check-out may be available upon request, subject to availability and additional charges may apply.
+                                Check-in begins at 15:00 and check-out is at 12:00 noon. Adjustments can be made with prior arrangement, subject to availability.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Do you offer airport transfers?
+                                Do you provide airport or transit services?
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Yes, we offer airport pickup and drop-off services for an additional fee. Please contact our concierge desk at least 24 hours in advance to arrange transportation.
+                                Yes. Secure and discreet transit arrangements, including airport transfers, are available upon request. Coordination is handled through the Concierge and is advised at least 24 hours in advance.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Is breakfast included in the room rate?
+                                Is breakfast included, and can dietary needs be accommodated?
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Breakfast is included in some of our room packages. If you book a room with breakfast included, you'll enjoy our gourmet breakfast buffet served from 6:30 AM to 10:30 AM daily.
+                                Select reservations include breakfast, served from 06:30 to 10:30. Menus are thoughtfully tailored, and dietary preferences or restrictions are discreetly honored with advance notice.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Do you accommodate special dietary requirements?
+                                What is the cancellation policy?
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Yes, our chefs can accommodate a variety of dietary needs including vegetarian, vegan, gluten-free, and allergy-specific requirements. Please inform us of any special dietary needs when making your reservation or upon arrival.
+                                For standard bookings, cancellations are accepted up to 48 hours before arrival without penalty. Later cancellations may incur one night's charge.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                What is your cancellation policy?
+                                Are guests outside the registry allowed access to the premises?
                             </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Our standard cancellation policy requires notice at least 48 hours prior to your scheduled arrival date to avoid a cancellation fee. Cancellations made less than 48 hours before arrival will be charged the full amount of the first night's stay.
+                                Access to all facilities is reserved for registered guests or verified appointments, following security procedures. The integrity and security of the premises is maintained without exception.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Do you accommodate extended or specialized stays?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes. The Sankan accommodates select long-term and purpose-driven residencies. Inquiries may be directed to the Clientele Desk for consideration.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                How is privacy managed on-site?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                All operations adhere to a non-disclosure standard. Movements, preferences, and personal data are protected as a matter of policy, not preference.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Are executive or business services available?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Private meeting suites and secure work lounges are available. Administrative assistance and arrangement handling can be coordinated with the Director of Operations.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Is security present at the hotel?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Absolutely. Security is embedded and present. Risk management and perimeter integrity are actively maintained by internal leadership.
                             </div>
                         </div>
                     </div>

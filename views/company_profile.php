@@ -4,7 +4,7 @@
 <div class="page-header">
     <div class="page-header-overlay"></div>
     <div class="container">
-        <h1>About Five Star Hotel</h1>
+        <h1>About Sankan Palace Hotel</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="home.php">Home</a></li>
@@ -26,7 +26,7 @@
                 <h2 class="section-title">Where the City Pauses</h2>
                 <p>Amid the rise of Roanapur in the early 1990s — a city defined by its shifting balances of commerce, influence, and quiet understanding — the Sankan Palace Hotel opened in 1995 as a foundation built with intent. Not against the city's nature, but in step with it.</p>
                 <p>At a time when most sought safety by retreating from Roanapur, a select few recognized its potential. Designed by international developers with regional ties and foresight, the hotel became a sanctuary engineered for discretion, security, and continuity. Sankan was to offer stability where few could. It became a sanctuary and a bastion for travelers, decision-makers, dignitaries and emissaries.</p>
-                <p>The hotel weathered the shifts of power that marked Roanapur's evolution. It was never swept up in the city's chaos — but remained near enough to matter. Today, the Sankan Palace Hotel is both a constant and an institution: a place known not for what is said about it and for what is never said at all.</p>
+                <p>The hotel weathered the shifts of power that marked Roanapur's evolution. It was never swept up in the city's chaos — but remained near enough to matter. Today, the Sankan Palace Hotel is both a constant and an institution: a place not known for what is said about it but for what is never said at all.</p>
             </div>
         </div>
     </div>
@@ -83,7 +83,7 @@
                     <div class="card-content">
                         <h3>Salvatore Verocchio</h3>
                         <p class="position">Director of Operations and Affairs</p>
-                        <p>Oversees daily operations, logistics, guest relations, and staff coordination to ensure efficient and discreet service.</p>
+                        <p>Oversees daily operations, logistics, guest relations, and staff coordination for efficient and exclusive service.</p>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                     <div class="card-content">
                         <h3>Sofia Pavlovna Irinovskaya</h3>
                         <p class="position">Head of Strategy and Security</p>
-                        <p>Responsible for shaping the hotel's strategic direction and overseeing security operations to ensure both growth and guest safety.</p>
+                        <p>Responsible for shaping the hotel's strategic direction and overseeing security operations for growth and guest safety.</p>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <div class="card-content">
                         <h3>Bai Ji-Shin Chang</h3>
                         <p class="position">Director of Assets and Finance</p>
-                        <p>Manages the hotel's financial operations and asset portfolio, ensuring fiscal stability and growth through strategic investments.</p>
+                        <p>Manages hotel financial operations and asset portfolio, ensuring fiscal stability and clean documentation in investments.</p>
                     </div>
                 </div>
             </div>
