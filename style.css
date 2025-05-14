@@ -781,3 +781,52 @@ a:hover {
         font-size: 1.8rem;
     }
 }
+
+
+/* ========== ADMIN SECTION ========== */
+.admin-hero-section {
+    height: 100vh;
+    background-image: url('assets/img/Sankan Hotel/Sankan Palace Hero 2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--light-text);
+}
+
+.admin-hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.admin-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.admin-hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--light-text);
+    animation: fadeInDown 1s ease;
+}
+
+.admin-hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease;
+}
+
+.admin-hero-content .btn {
+    animation: fadeIn 1.5s ease;
+}
