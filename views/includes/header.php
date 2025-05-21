@@ -37,12 +37,13 @@
                         <li class="nav-item">
                             <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?>" href="../views/contact.php">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'admin_login.php' ? 'active' : ''; ?>" href="../views/admin_login.php">Admin</a>
-                        </li>
                         <?php if (isset($isAdmin) && $isAdmin): ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="../views/logout.php">Logout</a>
+                            </li>
+                        <?php else: ?>
+                            <li class="nav-item">
+                                <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'admin_login.php' ? 'active' : ''; ?>" href="../views/admin_login.php">Admin</a>
                             </li>
                         <?php endif; ?>
                     </ul>

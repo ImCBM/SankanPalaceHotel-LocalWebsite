@@ -1,5 +1,6 @@
 <?php
-// Placeholder for logout logic (e.g., session_destroy())
-$isAdmin = false;
-header('Location: home.php');
-exit; 
+session_start();
+session_destroy();
+header("Location: admin_login.php");
+exit();
+?>
