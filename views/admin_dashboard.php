@@ -30,7 +30,7 @@ include 'includes/header.php';
 
 <div class="container py-5">
     <!-- Action Buttons -->
-    <div class="mb-4">
+    <div class="mb-4 text-end">
         <a href="reservation.php" class="btn btn-primary">
             <i class="fas fa-plus"></i> Create New Reservation
         </a>
