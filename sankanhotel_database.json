@@ -1,0 +1,97 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"sankanhotel_database"},
+{"type":"table","name":"contact_messages","database":"sankanhotel_database","data":
+[
+
+]
+}
+,{"type":"table","name":"customers","database":"sankanhotel_database","data":
+[
+{"customer_id":"1","customer_name":"dsdsds","contact_number":"21323","email":"sdsd@dsds","created_at":"2025-05-08 22:55:57"},
+{"customer_id":"2","customer_name":"dsdsds","contact_number":"dsdsd","email":"dsds@dds","created_at":"2025-05-09 10:14:07"},
+{"customer_id":"3","customer_name":"dsdsd","contact_number":"asasa","email":"dsds@dsds","created_at":"2025-05-10 03:48:33"},
+{"customer_id":"4","customer_name":"sasas","contact_number":"2323232","email":"sddsd@dsdsds","created_at":"2025-05-10 10:24:51"},
+{"customer_id":"5","customer_name":"sasds","contact_number":"dsds","email":"sdsds@sds","created_at":"2025-05-10 10:35:41"},
+{"customer_id":"6","customer_name":"Penisman","contact_number":"123","email":"Penis@man","created_at":"2025-05-13 15:16:34"},
+{"customer_id":"7","customer_name":"wolf","contact_number":"09234233502","email":"mamamo@gmail.com","created_at":"2025-05-14 14:24:45"},
+{"customer_id":"8","customer_name":"The Jonkler","contact_number":"122121","email":"Jonkening@jonk","created_at":"2025-05-21 22:11:55"},
+{"customer_id":"9","customer_name":"Jinkies","contact_number":"123123123","email":"Womp@womp","created_at":"2025-05-22 15:19:49"}
+]
+}
+,{"type":"table","name":"payment_types","database":"sankanhotel_database","data":
+[
+{"payment_type_id":"1","payment_name":"Cash","additional_charge_percentage":"0.00","created_at":"2025-05-08 22:54:11"},
+{"payment_type_id":"2","payment_name":"Check","additional_charge_percentage":"5.00","created_at":"2025-05-08 22:54:11"},
+{"payment_type_id":"3","payment_name":"Credit Card","additional_charge_percentage":"10.00","created_at":"2025-05-08 22:54:11"}
+]
+}
+,{"type":"table","name":"reservations","database":"sankanhotel_database","data":
+[
+{"reservation_id":"1","customer_id":"1","room_id":"7","date_reserved":"2025-05-08","date_from":"2025-05-27","date_to":"2025-05-31","payment_type_id":"1","special_requests":"sdsdsds","num_days":"4","subtotal":"800.00","discount":"80.00","additional_charge":"0.00","total_bill":"720.00","created_at":"2025-05-08 22:56:51"},
+{"reservation_id":"2","customer_id":"1","room_id":"1","date_reserved":"2025-05-08","date_from":"2025-05-10","date_to":"2025-05-16","payment_type_id":"1","special_requests":"","num_days":"6","subtotal":"600.00","discount":"90.00","additional_charge":"0.00","total_bill":"510.00","created_at":"2025-05-08 23:14:30"},
+{"reservation_id":"3","customer_id":"2","room_id":"8","date_reserved":"2025-05-09","date_from":"2025-05-23","date_to":"2025-05-31","payment_type_id":"1","special_requests":"","num_days":"8","subtotal":"1600.00","discount":"240.00","additional_charge":"0.00","total_bill":"1360.00","created_at":"2025-05-09 10:21:47"},
+{"reservation_id":"4","customer_id":"3","room_id":"1","date_reserved":"2025-05-09","date_from":"2025-05-23","date_to":"2025-05-27","payment_type_id":"1","special_requests":"","num_days":"4","subtotal":"400.00","discount":"40.00","additional_charge":"0.00","total_bill":"360.00","created_at":"2025-05-10 03:48:33"},
+{"reservation_id":"5","customer_id":"4","room_id":"3","date_reserved":"2025-05-10","date_from":"2025-05-21","date_to":"2025-05-25","payment_type_id":"1","special_requests":"dsdsds","num_days":"4","subtotal":"1200.00","discount":"120.00","additional_charge":"0.00","total_bill":"1080.00","created_at":"2025-05-10 10:24:51"},
+{"reservation_id":"6","customer_id":"5","room_id":"13","date_reserved":"2025-05-10","date_from":"2025-05-24","date_to":"2025-05-30","payment_type_id":"1","special_requests":"dsdsds","num_days":"6","subtotal":"1200.00","discount":"180.00","additional_charge":"0.00","total_bill":"1020.00","created_at":"2025-05-10 10:35:41"},
+{"reservation_id":"7","customer_id":"6","room_id":"19","date_reserved":"2025-05-13","date_from":"2025-05-13","date_to":"2025-05-17","payment_type_id":"1","special_requests":"Give me head","num_days":"4","subtotal":"2000.00","discount":"200.00","additional_charge":"0.00","total_bill":"1800.00","created_at":"2025-05-13 15:16:34"},
+{"reservation_id":"8","customer_id":"7","room_id":"9","date_reserved":"2025-05-14","date_from":"2025-05-14","date_to":"2025-05-22","payment_type_id":"1","special_requests":"free food\r\n","num_days":"8","subtotal":"4000.00","discount":"600.00","additional_charge":"0.00","total_bill":"3400.00","created_at":"2025-05-14 14:24:45"},
+{"reservation_id":"9","customer_id":"8","room_id":"1","date_reserved":"2025-05-21","date_from":"2025-05-21","date_to":"2025-05-22","payment_type_id":"2","special_requests":"dddsds","num_days":"1","subtotal":"100.00","discount":"0.00","additional_charge":"5.00","total_bill":"105.00","created_at":"2025-05-21 22:11:55"},
+{"reservation_id":"10","customer_id":"9","room_id":"23","date_reserved":"2025-05-22","date_from":"2025-05-22","date_to":"2025-05-30","payment_type_id":"1","special_requests":"fdfdfdfdfd","num_days":"8","subtotal":"8000.00","discount":"1200.00","additional_charge":"0.00","total_bill":"6800.00","created_at":"2025-05-22 15:19:49"}
+]
+}
+,{"type":"table","name":"rooms","database":"sankanhotel_database","data":
+[
+{"room_id":"1","room_number":"101","room_type_id":"1","room_capacity_id":"1","rate_per_day":"100.00","is_available":"1","created_at":"2025-05-08 22:54:20"},
+{"room_id":"2","room_number":"102","room_type_id":"1","room_capacity_id":"1","rate_per_day":"100.00","is_available":"1","created_at":"2025-05-08 22:54:20"},
+{"room_id":"3","room_number":"103","room_type_id":"2","room_capacity_id":"1","rate_per_day":"300.00","is_available":"1","created_at":"2025-05-08 22:54:20"},
+{"room_id":"4","room_number":"104","room_type_id":"2","room_capacity_id":"1","rate_per_day":"300.00","is_available":"1","created_at":"2025-05-08 22:54:20"},
+{"room_id":"5","room_number":"105","room_type_id":"3","room_capacity_id":"1","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:20"},
+{"room_id":"6","room_number":"106","room_type_id":"3","room_capacity_id":"1","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:20"},
+{"room_id":"7","room_number":"201","room_type_id":"1","room_capacity_id":"2","rate_per_day":"200.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"8","room_number":"202","room_type_id":"1","room_capacity_id":"2","rate_per_day":"200.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"9","room_number":"203","room_type_id":"2","room_capacity_id":"2","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"10","room_number":"204","room_type_id":"2","room_capacity_id":"2","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"11","room_number":"205","room_type_id":"3","room_capacity_id":"2","rate_per_day":"800.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"12","room_number":"206","room_type_id":"3","room_capacity_id":"2","rate_per_day":"800.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"13","room_number":"201","room_type_id":"1","room_capacity_id":"2","rate_per_day":"200.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"14","room_number":"202","room_type_id":"1","room_capacity_id":"2","rate_per_day":"200.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"15","room_number":"203","room_type_id":"2","room_capacity_id":"2","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"16","room_number":"204","room_type_id":"2","room_capacity_id":"2","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"17","room_number":"205","room_type_id":"3","room_capacity_id":"2","rate_per_day":"800.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"18","room_number":"206","room_type_id":"3","room_capacity_id":"2","rate_per_day":"800.00","is_available":"1","created_at":"2025-05-08 22:54:28"},
+{"room_id":"19","room_number":"301","room_type_id":"1","room_capacity_id":"3","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"20","room_number":"302","room_type_id":"1","room_capacity_id":"3","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"21","room_number":"303","room_type_id":"2","room_capacity_id":"3","rate_per_day":"750.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"22","room_number":"304","room_type_id":"2","room_capacity_id":"3","rate_per_day":"750.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"23","room_number":"305","room_type_id":"3","room_capacity_id":"3","rate_per_day":"1000.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"24","room_number":"306","room_type_id":"3","room_capacity_id":"3","rate_per_day":"1000.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"25","room_number":"301","room_type_id":"1","room_capacity_id":"3","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"26","room_number":"302","room_type_id":"1","room_capacity_id":"3","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"27","room_number":"303","room_type_id":"2","room_capacity_id":"3","rate_per_day":"750.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"28","room_number":"304","room_type_id":"2","room_capacity_id":"3","rate_per_day":"750.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"29","room_number":"305","room_type_id":"3","room_capacity_id":"3","rate_per_day":"1000.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"30","room_number":"306","room_type_id":"3","room_capacity_id":"3","rate_per_day":"1000.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"31","room_number":"301","room_type_id":"1","room_capacity_id":"3","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"32","room_number":"302","room_type_id":"1","room_capacity_id":"3","rate_per_day":"500.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"33","room_number":"303","room_type_id":"2","room_capacity_id":"3","rate_per_day":"750.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"34","room_number":"304","room_type_id":"2","room_capacity_id":"3","rate_per_day":"750.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"35","room_number":"305","room_type_id":"3","room_capacity_id":"3","rate_per_day":"1000.00","is_available":"1","created_at":"2025-05-08 22:54:33"},
+{"room_id":"36","room_number":"306","room_type_id":"3","room_capacity_id":"3","rate_per_day":"1000.00","is_available":"1","created_at":"2025-05-08 22:54:33"}
+]
+}
+,{"type":"table","name":"room_capacities","database":"sankanhotel_database","data":
+[
+{"room_capacity_id":"1","capacity_name":"Single","max_guests":"1","created_at":"2025-05-08 22:54:07"},
+{"room_capacity_id":"2","capacity_name":"Double","max_guests":"2","created_at":"2025-05-08 22:54:07"},
+{"room_capacity_id":"3","capacity_name":"Family","max_guests":"4","created_at":"2025-05-08 22:54:07"}
+]
+}
+,{"type":"table","name":"room_types","database":"sankanhotel_database","data":
+[
+{"room_type_id":"1","room_type":"Regular","description":"Standard room with essential amenities for a comfortable stay","created_at":"2025-05-08 22:54:01"},
+{"room_type_id":"2","room_type":"De Luxe","description":"Spacious room with premium amenities and elegant furnishings","created_at":"2025-05-08 22:54:01"},
+{"room_type_id":"3","room_type":"Suite","description":"Luxurious suite with separate living area and exclusive amenities","created_at":"2025-05-08 22:54:01"}
+]
+}
+]

@@ -13,6 +13,16 @@ $isAdmin = true;
 include 'includes/header.php'; 
 ?>
 
+<!-- Add meta tags for security -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+<!-- Update CSS and JS includes -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 <div class="page-header">
     <div class="page-header-overlay"></div>
     <div class="container">
@@ -65,8 +75,11 @@ include 'includes/header.php';
                             <td><?php echo date('M d, Y', strtotime($reservation['date_to'])); ?></td>
                             <td>₱<?php echo number_format($reservation['total_bill'], 2); ?></td>
                             <td>
-                                <button class="btn btn-sm btn-info" onclick="viewReservation(<?php echo $reservation['reservation_id']; ?>)">
+                                <button class="btn btn-sm btn-info me-2" onclick="viewReservation(<?php echo $reservation['reservation_id']; ?>)">
                                     <i class="fas fa-eye"></i> See Details
+                                </button>
+                                <button class="btn btn-sm btn-danger" onclick="showDeleteConfirmation(<?php echo $reservation['reservation_id']; ?>)">
+                                    <i class="fas fa-trash"></i> Delete
                                 </button>
                             </td>
                         </tr>
@@ -112,16 +125,45 @@ include 'includes/header.php';
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Confirm Delete</button>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="deleteSuccessToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header bg-success text-white">
+            <i class="fas fa-check-circle me-2"></i>
+            <strong class="me-auto">Success</strong>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Reservation has been successfully deleted.
         </div>
     </div>
 </div>
 
 <script>
 let currentReservationId = null;
-const reservationModal = new bootstrap.Modal(document.getElementById('reservationModal'));
-const deleteConfirmModal = new bootstrap.Modal(document.getElementById('deleteConfirmModal'));
+let reservationModal;
+let deleteConfirmModal;
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize modals
+    reservationModal = new bootstrap.Modal(document.getElementById('reservationModal'));
+    deleteConfirmModal = new bootstrap.Modal(document.getElementById('deleteConfirmModal'));
+    
+    // Initialize toast
+    const toastEl = document.getElementById('deleteSuccessToast');
+    if (toastEl) {
+        new bootstrap.Toast(toastEl, {
+            autohide: true,
+            delay: 3000
+        });
+    }
+});
 
 function viewReservation(id) {
     currentReservationId = id;
@@ -130,7 +172,7 @@ function viewReservation(id) {
     document.getElementById('deleteBtn').onclick = () => showDeleteConfirmation(id);
     
     // Fetch and display reservation details
-    fetch(`admin_actions.php?action=get_reservation&reservation_id=${id}`)
+    fetch(`../controllers/AdminActionsController.php?action=get_reservation&reservation_id=${id}`)
         .then(response => response.json())
         .then(reservation => {
             document.getElementById('reservationDetails').innerHTML = `
@@ -224,7 +266,7 @@ function showDeleteConfirmation(id) {
 }
 
 function deleteReservation(id) {
-    fetch('admin_actions.php', {
+    fetch('../controllers/AdminActionsController.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -235,10 +277,20 @@ function deleteReservation(id) {
     .then(data => {
         if(data.success) {
             deleteConfirmModal.hide();
-            location.reload();
+            // Show success toast
+            const toast = new bootstrap.Toast(document.getElementById('deleteSuccessToast'));
+            toast.show();
+            // Reload the page after a short delay
+            setTimeout(() => {
+                location.reload();
+            }, 1500);
         } else {
             alert('Failed to delete reservation');
         }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while deleting the reservation');
     });
 }
 </script>
@@ -250,6 +302,19 @@ function deleteReservation(id) {
 }
 .reservation-details .section:last-child .row:last-child {
     border-bottom: none;
+}
+
+.toast {
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.toast-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.toast-body {
+    padding: 0.75rem;
 }
 </style>
 
