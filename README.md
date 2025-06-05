@@ -88,6 +88,93 @@ It is developed solely for educational and demonstrative purposes. No copyright 
 6. Configure database connection in `config/config.php` if needed
 7. Access the system through your web browser
 
+## Default Admin Credentials
+
+The system comes with a default admin account for initial setup:
+- **Username**: `admin`
+- **Password**: `admin123`
+
+**Important Security Note**: 
+- Change these default credentials immediately after first login
+- Use strong passwords (minimum 8 characters, mix of letters, numbers, and special characters)
+- Regularly update admin passwords for security
+- The system uses password hashing for secure storage
+
+## Database System
+
+### Overview
+The system uses MySQL/MariaDB through XAMPP with the following specifications:
+- Database Name: `SankanHotel_Database`
+- Default Credentials:
+  - Username: `root`
+  - Password: `` (empty by default)
+- Character Set: UTF-8
+- Collation: utf8mb4_general_ci
+
+### Automatic Setup
+The system includes an automatic database initialization feature that:
+- Creates the database if it doesn't exist
+- Sets up all required tables with proper relationships
+- Imports initial data for room types, capacities, and payment methods
+- Handles database migrations automatically
+
+### Database Limits
+- Maximum concurrent users: Limited by XAMPP's default configuration
+- Maximum database size: Limited by available disk space
+- Maximum table size: Limited by MySQL's configuration
+- Backup frequency: Manual (recommended daily)
+
+## Project Scope and Limitations
+
+### Current Features
+- Complete room management system
+- Reservation handling
+- Customer management
+- Payment processing
+- Admin dashboard
+- Contact form system
+
+### Known Limitations
+1. **Scalability**
+   - Designed for single-hotel operations
+   - Not optimized for multi-hotel chains
+   - Limited to XAMPP's default performance settings
+
+2. **Payment Processing**
+   - No direct integration with payment gateways
+   - Manual payment verification required
+   - Limited to cash, check, and credit card records
+
+3. **User Management**
+   - Single admin level (no role-based access control)
+   - No customer account system
+   - No password recovery system
+
+4. **Reporting**
+   - Basic reporting capabilities
+   - No advanced analytics
+   - Limited export options
+
+5. **Technical Limitations**
+   - Requires XAMPP environment
+   - No cloud deployment support
+   - Limited to PHP 7.4+ compatibility
+
+### Future Enhancements
+1. **Planned Features**
+   - Customer account system
+   - Online payment gateway integration
+   - Advanced reporting system
+   - Email notification system
+   - Mobile app integration
+
+2. **Potential Improvements**
+   - Role-based access control
+   - Cloud deployment support
+   - API development
+   - Multi-language support
+   - Advanced search capabilities
+
 ## Database Schema
 
 The system uses the following main tables:
